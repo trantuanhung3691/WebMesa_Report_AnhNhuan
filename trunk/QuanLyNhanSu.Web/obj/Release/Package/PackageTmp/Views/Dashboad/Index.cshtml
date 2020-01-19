@@ -1,0 +1,426 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model QuanLyNhanSu.Web.Models.DashboadModel
+@using QuanLyNhanSu.Web.Models;
+<script src="~/Scripts/Charts/highcharts.js"></script>
+<script src="~/Scripts/Charts/modules/exporting.js"></script>
+<script src="~/Scripts/Charts/modules/export-data.js"></script>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Dashboard <small></small>
+                <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Index", "Dashboad")'">
+                    Dashboard (For test)
+                </button>
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-bar-chart-o fa-fw"></i>Brands
+                    <div class="pull-right">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                @Model.FromDate.ToString("MM/dd/yyyy")~@Model.ToDate.ToString("MM/dd/yyyy")
+                                <span class="caret"></span>
+                            </button>
+                            <div class="dropdown-menu pull-right">
+                                <li>
+                                    <a href="#" onclick="ShowTimePicker(1);"><span class="fa fa-calendar"></span>Chart by date</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="ShowTimePicker(2);"><span class="fa fa-calendar"></span>Chart by month</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="ShowTimePicker(3);"><span class="fa fa-calendar"></span>Chart by year</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="ShowTimePicker(4);"><span class="fa fa-calendar"></span> Chart group by date</a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body" id="chartPanel">
+                    <div id="myBarChart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="divChartByBranch" style="display:none;">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-bar-chart-o fa-fw"></i><label id="divBrandSelected"> Revenue by brand</label>
+                </div>
+                <div class="panel-body" id="chartPanel">
+                    
+                    <div id="myBarChartByBranch" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="divChartByStore" style="display:none;">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-bar-chart-o fa-fw"></i><label id="divStoreSelected"> Revenue by store</label>
+                </div>
+                <div class="panel-body" id="chartPanel">
+                    <div id="myBarChartByStore" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="divSelectTime" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">Select date</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row" id="divDate">
+                    <div class="input-group input-daterange" id="divDate">
+                        @Html.EditorFor(model => model.FromDate, new { htmlAttributes = new { @class = "form-control", autocomplete = "off" } })
+                        <div class="input-group-addon">to</div>
+                        @Html.EditorFor(model => model.ToDate, new { htmlAttributes = new { @class = "form-control", autocomplete = "off" } })
+                    </div>
+                </div>
+
+                <div class="input-group input-daterange" id="divYear">
+                    <input type="text" id="frmYear" class="form-control">
+                    <div class="input-group-addon">to</div>
+                    <input type="text" id="toYear" class="form-control">
+                </div>
+                <div class="input-group input-daterange" id="divMonth">
+                    <input type="text" id="frmMonth" class="form-control">
+                    <div class="input-group-addon">to</div>
+                    <input type="text" id="toMonth" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" onclick="UpdateChart();">@QuanLyNhanSu.Commons.ControlText.Search</button>
+            </div>
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    .clsDatePicker {
+        z-index: 100000;
+    }
+
+    .datepicker {
+        z-index: 1051 !important;
+    }
+</style>
+<script src="/js/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    var SelectType = 1;
+    var ToDateSelected = "";
+    var FromSelected = "";
+    var BranchID = "";
+    var frmDate;
+    var storeCodes = [];
+    var color = "";
+    var ShowTimePicker = function (s) {
+        SelectType = s;
+        switch (s) {
+            case 4:
+            case 1:
+                $("#divDate").show();
+                $("#divMonth").hide();
+                $("#divYear").hide();
+                break;
+            case 2:
+                $("#divDate").hide();
+                $("#divMonth").show();
+                $("#divYear").hide();
+                break;
+            case 3:
+                $("#divDate").hide();
+                $("#divMonth").hide();
+                $("#divYear").show();
+                break;
+        }
+        $("#divSelectTime").modal('show');
+    };
+
+    var UpdateChart = function () {
+        var fromdate = $("#FromDate").val();
+        FromSelected = fromdate;
+        var todate = $("#ToDate").val();
+        switch (SelectType) {
+            case 1:
+            case 4:
+                break;
+            case 2:
+                fromdate = $("#frmMonth").val()+"-01";
+                todate = $("#toMonth").val() + "-01";
+                break;
+            case 3:
+                fromdate = $("#frmYear").val() + "-01-01";
+                todate = $("#toYear").val() + "-01-01";
+                break;
+        }
+        $.ajax({
+            type: "GET",
+            url: '@Url.Action("GetCharts", "Dashboad")?fromdate=' + fromdate + '&todate=' + todate + '&type=' + SelectType,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            beforeSend: function () {
+                $("#divLoading").modal('show');
+            },
+            success: function (data) {
+                if (data.title == "")
+                {
+                    $("#divLoading").modal('hide');
+                    return;
+                }
+                for (var i = 0; i < data.data.length; i++) {
+                    data.data[i].click = selectColumn;
+                }
+                Highcharts.chart('myBarChart', {
+                    chart: {
+                        type: 'column'
+                    },
+                    title: {
+                        text: data.title
+                    },
+                    subtitle: {
+                        text: data.Subtitle
+                    },
+                    xAxis: {
+                        categories: data.labels,
+                        crosshair: true,
+                        title: {
+                            text: data.titlex
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: data.titley
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                        pointFormat: '<tr style="textalign:right;"><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                            '<td style="padding:0"><b>{point.y:,.0f} vnđ</b></td></tr>',
+                        footerFormat: '</table>',
+                        shared: true,
+                        useHTML: true
+                    },
+                    plotOptions: {
+                        column: {
+                            borderWidth: 0
+                        },
+                        series: {
+                            cursor: 'pointer',
+                            events: {
+                                click: selectColumn
+                            }
+                        }
+                    },
+                    series: data.datahight,
+                });
+                var scrollPos = $("#myBarChartByBranch").offset().top;
+                $(window).scrollTop(scrollPos);
+                $("#divLoading").modal('hide');
+            },
+            error: function () {
+                alert("System have error!");
+            }
+        });
+        $("#divSelectTime").modal('hide');
+    }
+    function selectColumn(event) {
+        //var date = event.point.category;
+        //var band = this.legendItem.textStr;
+        //alert(date + band);
+        //return;
+        ToDateSelected = event.point.category;
+        switch (SelectType) {
+            case 1:
+                FromSelected = event.point.category;
+                ToDateSelected = event.point.category;
+                break;
+            case 4:
+                var arrDate = event.point.category.split('~');
+                FromSelected = arrDate[0];
+                ToDateSelected = arrDate[1];
+                break;
+            case 2:
+                FromSelected = event.point.category + "/01";;
+                ToDateSelected = event.point.category + "/01";
+                break;
+            case 3:
+                FromSelected = event.point.category + "-01-01";
+                ToDateSelected = event.point.category + "-01-01";
+                break;
+        }
+        BranchID = this.legendItem.textStr;
+        color = this.color;
+        $("#divBrandSelected").html("Revenue of Brand "+BranchID);
+        UpdateChartByBranch(FromSelected,ToDateSelected, BranchID, SelectType);
+    };
+    
+    function toggleDataSeries(e) {
+        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+            e.dataSeries.visible = false;
+        } else {
+            e.dataSeries.visible = true;
+        }
+        e.chart.render();
+    };
+    var UpdateChartByBranch = function (fromdate,todate, branchID, SelectType) {
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("GetChartByBranch", "Dashboad")?fromdate=' + fromdate + '&todate=' + todate + '&branchID=' + branchID + '&selectType=' + SelectType,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            beforeSend: function () {
+                $("#divLoading").modal('show');
+            },
+            success: function (data) {
+                $("#divChartByBranch").css("display", "block");
+                for (var i = 0; i < data.data.length; i++) {
+                    data.data[i].click = selectByStore;
+                }
+                storeCodes = data.codes;
+                Highcharts.chart('myBarChartByBranch', {
+                    chart: {
+                        type: 'column'
+                    },
+                    title: {
+                        text: data.title
+                    },
+                    subtitle: {
+                        text: data.Subtitle
+                    },
+                    xAxis: {
+                        categories: data.labels,
+                        crosshair: true,
+                        title: {
+                            text: data.titlex
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: data.titley
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                        pointFormat: '<tr style="textalign:right;"><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                            '<td style="padding:0"><b>{point.y:,.0f} vnđ</b></td></tr>',
+                        footerFormat: '</table>',
+                        shared: true,
+                        useHTML: true
+                    },
+                    plotOptions: {
+                        column: {
+                            borderWidth: 0
+                        },
+                        series: {
+                            color:color,
+                            cursor: 'pointer',
+                            events: {
+                                click: selectByStore
+                            }
+                        }
+                    },
+                    series: data.datahight,
+                });
+                var scrollPos = $("#myBarChartByStore").offset().top;
+                $(window).scrollTop(scrollPos);
+                $("#divLoading").modal('hide');
+            },
+            error: function () {
+                alert("Have some error");
+            }
+        });
+    };
+    function selectByStore(e) {
+        $("#divStoreSelected").html("Revenue of Store " + e.point.category);
+        var storeid = storeCodes[e.point.index];
+        UpdateChartByStore(FromSelected, ToDateSelected, BranchID, storeid, SelectType);
+    };
+    var UpdateChartByStore = function (fromdate,todate, branchID,store, SelectType) {
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("GetChartByStore", "Dashboad")?fromdate=' + fromdate + '&todate=' + todate + '&branchID=' + branchID + '&store=' + store + '&selectType=' + SelectType,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            beforeSend: function () {
+                $("#divLoading").modal('show');
+            },
+            success: function (data) {
+                $("#divChartByStore").css("display", "block");
+                for (var i = 0; i < data.data.length; i++) {
+                    //data.data[i].click = selectByStore;
+                }
+                Highcharts.chart('myBarChartByStore', {
+                    chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false,
+                        type: 'pie'
+                    },
+                    title: {
+                        text: data.title,
+                    },
+                    subtitle: {
+                        text: data.Subtitle
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: {point.y:,.0f}VND-<b>{point.percentage:.1f}%</b>'
+                    },
+                    plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: true,
+                                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                                style: {
+                                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        name: 'Revenue',
+                        colorByPoint: true,
+                        data: data.dataPie
+                    }]
+                });
+                $("#divLoading").modal('hide');
+            },
+            error: function () {
+                alert("Have some error");
+            }
+        });
+    }
+    $(document).ready(function () {
+        Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+        Chart.defaults.global.defaultFontColor = '#292b2c';
+        $('#FromDate').datetimepicker({ format: 'MM/DD/YYYY',  locale: 'en' });
+        $('#ToDate').datetimepicker({ format: 'MM/DD/YYYY', locale: 'en' });
+
+        $('#frmMonth').datetimepicker({ format: 'M-YYYY', viewMode: "months",  locale: 'en' });
+        $('#toMonth').datetimepicker({ format: 'M-YYYY', viewMode: "months", locale: 'en' });
+
+        $('#frmYear').datetimepicker({ format: 'YYYY', viewMode: "years", locale: 'en' });
+        $('#toYear').datetimepicker({ format: 'YYYY', viewMode: "years", locale: 'en' });
+        UpdateChart();
+    });
+</script>
+

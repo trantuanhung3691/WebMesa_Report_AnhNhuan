@@ -1,0 +1,65 @@
+﻿@model QuanLyNhanSu.Web.Models.BranchModel
+@using QuanLyNhanSu.Web.Models;
+
+@{
+    ViewBag.Title = "Create new brand";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@using QuanLyNhanSu.Commons;
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm("Create", "Branch", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.MyLabelFor(model => model.BRANCHCODE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.BRANCHCODE, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.BRANCHCODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.MyLabelFor(model => model.BRANCHNAME, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.BRANCHNAME, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.BRANCHNAME, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.BRANCHLOGO, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" id="fileUpload" name="fileUpload" class="form-control" accept="image/x-png,image/jpeg" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+                
+                    @if (!string.IsNullOrEmpty(ViewBag.SuccessMessage))
+                    {
+                        <label class="label label-success">
+                            @ViewBag.SuccessMessage
+                        </label>
+                    }
+                @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+                {
+                    <label class="label label-danger">
+                        @ViewBag.ErrorMessage
+                    </label>
+                }
+            </div>
+            
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink(ControlText.GoBack, "Index")
+    <span class="glyphicon glyphicon-arrow-left glyphicon-th-large"/>
+</div>

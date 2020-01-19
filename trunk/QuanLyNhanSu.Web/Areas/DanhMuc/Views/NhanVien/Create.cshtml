@@ -1,0 +1,228 @@
+﻿@model QuanLyNhanSu.Web.Models.NhanVienModel
+@using QuanLyNhanSu.Web.Models;
+
+@{
+    ViewBag.Title = "Add new Employee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.MyLabelFor(model => model.MANV, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.MANV, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MANV, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.MyLabelFor(model => model.HOTEN, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.HOTEN, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.HOTEN, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.MyLabelFor(model => model.EMAIL, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.EMAIL, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.EMAIL, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.MyLabelFor(model => model.DIENTHOAI, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.DIENTHOAI, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DIENTHOAI, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                @if (!string.IsNullOrEmpty(ViewBag.SuccessMessage))
+                {
+                    <label class="label label-success">
+                        @ViewBag.SuccessMessage
+                    </label>
+                }
+                @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+                {
+                    <label class="label label-danger">
+                        @ViewBag.ErrorMessage
+                    </label>
+                }
+            </div>
+            <div class="col-md-9">
+                <h3 class="text-center">
+                    Brand manage
+                    
+                    <input type="hidden" id="lbBranch" name="lbBranch" />
+                    <input type="hidden" id="lbStore" name="lbStore" />
+                </h3>
+                <div class="well">
+                    <table class="table" id="tbNguoiDung">
+                        <tr role="row">
+                            <th>
+                                ON/OFF
+                            </th>
+                            <th>
+                                Brand name
+                            </th>
+                            <th>
+                                LOGO
+                            </th>
+                        </tr>
+                        @{
+                            var branchs = ViewBag.Branchs as List<BranchModel>;
+                            if (branchs != null)
+                            {
+                                foreach (var branch in branchs)
+                                {
+                                    <tr role="row">
+                                        <td>
+                                            
+                                            <div class="container" style="width:20px;">
+                                                <input type="checkbox" name="checkbox1" id="@branch.BRANCHCODE-1" />
+                                                <label for="@branch.BRANCHCODE-1" class="checkmark" data-off="off" data-on="on" onclick="Change(this,'@branch.BRANCHCODE',1);"></label>
+                                            </div>
+                                            
+                                        </td>
+                                        <td>
+                                            <p style="font-weight:bold;color:black;">@branch.BRANCHNAME</p>
+                                            @{
+                                                var listStore = Session[QuanLyNhanSu.Commons.SessionKeys.StoreList] as List<StoreModel>;
+                                                var storesByBranch = listStore.Where(p => p.ID.Substring(0, 2).Equals(branch.BRANCHCODE));
+                                                if (storesByBranch.Count() > 0)
+                                                {
+
+                                                    <table class="table expand" id='@branch.BRANCHCODE' style="width:100%;">
+                                                        <tr>
+                                                            <th style="width:10px;">
+                                                                On/Off
+                                                            </th>
+                                                            <th>
+                                                                Store name
+                                                            </th>
+                                                        </tr>
+                                                        @{
+                                                            foreach (var store in storesByBranch)
+                                                            {
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="container" style="width:10px;">
+                                                                            <input type="checkbox" name="checkbox" id="@store.ID" />
+                                                                            <label for="@store.ID" class="checkmark" data-off="off" data-on="on" onclick="ChangeStore(this,'@store.ID',1);" checked></label>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        @store.Name
+                                                                    </td>
+                                                                </tr>
+                                                            }
+                                                        }
+                                                    </table>
+                                                            }
+                                            }
+                                        </td>
+
+                                        <td>
+                                            <img src="@branch.BRANCHLOGO" class="branchLogo" />
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-3 col-md-10">
+                <input type="submit" value="@QuanLyNhanSu.Commons.ControlText.AddNew" class="btn btn-info" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                
+
+                
+            </div>
+        </div>
+
+    </div>
+                            }
+<script src="/js/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    var arrBrach = [];
+    var arrStore = [];
+    $(document).ready(function () {
+        $('#MANVQL').attr('data-live-search', 'true');
+        $('#MANVQL').attr('data-width', '100%');
+        $('#MANVQL2').attr('data-live-search', 'true');
+        $('#MANVQL2').attr('data-width', '100%');
+    });
+    var updateHidden = function () {
+        var value = "";
+        for (var i = 0; i < arrBrach.length; i++) {
+            value += ("_" + arrBrach[i]);
+        }
+        var valueStore = "";
+        for (var i = 0; i < arrStore.length; i++) {
+            valueStore += ("_" + arrStore[i]);
+        }
+        $("#lbBranch").val(value);
+        $("#lbStore").val(valueStore);
+    };
+    var Change = function (s, value) {
+        var chk = $(s).closest('tr').find('input:checkbox');
+        var current = chk[0];
+        var checked = current.checked;
+        var checkboxs = $("#" + value).closest("tr").find("table").find("input:checkbox");
+        for (var i = 0; i < checkboxs.length; i++) {
+            var storeID=checkboxs[i].id;
+            checkboxs[i].checked = !checked;
+            if (!checked) {
+                var indexofstore = arrStore.indexOf(storeID);
+                if (indexofstore < 0) {
+                    arrStore.push(storeID);
+                }
+            } else {
+                arrStore.pop(storeID);
+            }
+        }
+        if (!checked) {
+            var indexof = arrBrach.indexOf(value);
+            if (indexof < 0) {
+                arrBrach.push(value);
+            }
+        } else {
+            arrBrach.pop(value);
+        }
+        updateHidden();
+    };
+    var ChangeStore = function (s, value) {
+        var chk = $(s).closest('tr').find('input:checkbox');
+        var current = chk[0];
+        var checked = current.checked;
+        
+        if (!checked) {
+            var indexof = arrStore.indexOf(value);
+            if (indexof < 0) {
+                arrStore.push(value);
+            }
+        } else {
+            arrStore.pop(value);
+        }
+        updateHidden();
+    };
+    </script>
+
+<div>
+    @Html.ActionLink(QuanLyNhanSu.Commons.ControlText.GoBack, "Index")
+</div>

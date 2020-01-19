@@ -1,0 +1,1624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A53AD86-F83F-4992-99D1-33DAC7C4CBB5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyNhanSu.Web</RootNamespace>
+    <AssemblyName>QuanLyNhanSu.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\DevExpress.Data.v19.1\DevExpress.Data.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Export, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Web.WebForms, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Web, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.3.1.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.3.1\lib\net452\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Web.Optimization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Web.Optimization.0.0.8\lib\net40\Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\BaseControler.cs" />
+    <Compile Include="Areas\DanhMuc\Controllers\StoreController.cs" />
+    <Compile Include="Areas\DanhMuc\Controllers\BranchController.cs" />
+    <Compile Include="Areas\DanhMuc\Controllers\NavbarController.cs" />
+    <Compile Include="Areas\DanhMuc\Controllers\NhanVienController.cs" />
+    <Compile Include="Areas\DanhMuc\DanhMucAreaRegistration.cs" />
+    <Compile Include="Areas\HeThong\Controllers\GroupController.cs" />
+    <Compile Include="Areas\HeThong\Controllers\NavbarController.cs" />
+    <Compile Include="Areas\HeThong\Controllers\NguoiDungController.cs" />
+    <Compile Include="Areas\HeThong\HeThongAreaRegistration.cs" />
+    <Compile Include="Areas\HeThong\Models\GroupDetailModel.cs" />
+    <Compile Include="Areas\ReportSales\Controllers\ItemSaleByDesController.cs" />
+    <Compile Include="Areas\ReportSales\Controllers\NavbarController.cs" />
+    <Compile Include="Areas\ReportSales\Controllers\WeeklyHourlySaleController.cs" />
+    <Compile Include="Areas\ReportSales\Models\SaleReportModel.cs" />
+    <Compile Include="Areas\ReportSales\ReportSalesAreaRegistration.cs" />
+    <Compile Include="Areas\Reports\Controllers\DiscountByCodeController.cs" />
+    <Compile Include="Areas\Reports\Controllers\ConsolidationController.cs" />
+    <Compile Include="Areas\ReportSales\Controllers\ItemSaleByTenderController.cs" />
+    <Compile Include="Areas\ReportSales\Controllers\ItemSaleByItemController.cs" />
+    <Compile Include="Areas\Reports\Controllers\LossPreventionController.cs" />
+    <Compile Include="Areas\Reports\Controllers\NavbarController.cs" />
+    <Compile Include="Areas\Reports\Controllers\TenderController.cs" />
+    <Compile Include="Areas\ReportSales\Controllers\ItemSaleController.cs" />
+    <Compile Include="Areas\Reports\Controllers\WeeklyHourlyController.cs" />
+    <Compile Include="Areas\Reports\Models\ItemReportModel.cs" />
+    <Compile Include="Areas\Reports\ReportsAreaRegistration.cs" />
+    <Compile Include="Controllers\DashboadController.cs" />
+    <Compile Include="Controllers\HomeBackupController.cs" />
+    <Compile Include="Models\ChartJsModel.cs" />
+    <Compile Include="Models\ChartModel.cs" />
+    <Compile Include="Models\DashboadModel.cs" />
+    <Compile Include="Models\GroupModel.cs" />
+    <Compile Include="Models\LogoReportModel.cs" />
+    <Compile Include="Models\NgonNguModel.cs" />
+    <Compile Include="Models\NhanVienModel.cs" />
+    <Compile Include="Models\StoreModel.cs" />
+    <Compile Include="Reports\Devs\Consolidation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Devs\Consolidation.Designer.cs">
+      <DependentUpon>Consolidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Devs\ItemSaleByDes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Devs\ItemSaleByDes.Designer.cs">
+      <DependentUpon>ItemSaleByDes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Devs\ItemSale.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Devs\ItemSale.Designer.cs">
+      <DependentUpon>ItemSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Devs\ItemSaleByItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Devs\ItemSaleByItem.Designer.cs">
+      <DependentUpon>ItemSaleByItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Devs\DiscountByCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Devs\DiscountByCode.Designer.cs">
+      <DependentUpon>DiscountByCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Devs\ItemSaleByTender.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Devs\ItemSaleByTender.Designer.cs">
+      <DependentUpon>ItemSaleByTender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Devs\LossPreventionDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Devs\LossPreventionDetail.Designer.cs">
+      <DependentUpon>LossPreventionDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Devs\LossPrevention.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Devs\LossPrevention.Designer.cs">
+      <DependentUpon>LossPrevention.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Devs\Tender.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Devs\Tender.Designer.cs">
+      <DependentUpon>Tender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Devs\WeeklyHourly.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Devs\WeeklyHourly.Designer.cs">
+      <DependentUpon>WeeklyHourly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Devs\WeelyHourlySale.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Devs\WeelyHourlySale.Designer.cs">
+      <DependentUpon>WeelyHourlySale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewers\DiscountByCode.aspx.cs">
+      <DependentUpon>DiscountByCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewers\DiscountByCode.aspx.designer.cs">
+      <DependentUpon>DiscountByCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewers\ItemSaleByDes.aspx.cs">
+      <DependentUpon>ItemSaleByDes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewers\ItemSaleByDes.aspx.designer.cs">
+      <DependentUpon>ItemSaleByDes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewers\ItemSaleByTender.aspx.cs">
+      <DependentUpon>ItemSaleByTender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewers\ItemSaleByTender.aspx.designer.cs">
+      <DependentUpon>ItemSaleByTender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewers\ItemSaleByItem.aspx.cs">
+      <DependentUpon>ItemSaleByItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewers\ItemSaleByItem.aspx.designer.cs">
+      <DependentUpon>ItemSaleByItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewers\LossPrevention.aspx.cs">
+      <DependentUpon>LossPrevention.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewers\LossPrevention.aspx.designer.cs">
+      <DependentUpon>LossPrevention.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewers\ItemSale.aspx.cs">
+      <DependentUpon>ItemSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewers\ItemSale.aspx.designer.cs">
+      <DependentUpon>ItemSale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewers\ReportViewer.Master.cs">
+      <DependentUpon>ReportViewer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewers\ReportViewer.Master.designer.cs">
+      <DependentUpon>ReportViewer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewers\WeeklyHourlySale.aspx.cs">
+      <DependentUpon>WeeklyHourlySale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewers\WeeklyHourlySale.aspx.designer.cs">
+      <DependentUpon>WeeklyHourlySale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewers\WeeklyHourly.aspx.cs">
+      <DependentUpon>WeeklyHourly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewers\WeeklyHourly.aspx.designer.cs">
+      <DependentUpon>WeeklyHourly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceDao\ChartDao.cs" />
+    <Compile Include="ServiceDao\BranchDao.cs" />
+    <Compile Include="ServiceDao\GroupDao.cs" />
+    <Compile Include="ServiceDao\ReportServiceDao.cs" />
+    <Compile Include="Datasets\dtReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HelpersLabelExtensions.cs" />
+    <Compile Include="Models\ReportModels.cs" />
+    <Compile Include="ReportViewers\Tender.aspx.cs">
+      <DependentUpon>Tender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewers\Tender.aspx.designer.cs">
+      <DependentUpon>Tender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewers\Consolidation.aspx.cs">
+      <DependentUpon>Consolidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewers\Consolidation.aspx.designer.cs">
+      <DependentUpon>Consolidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceDao\MenuDao.cs" />
+    <Compile Include="ServiceDao\NhanVienDao.cs" />
+    <Compile Include="ServiceDao\NgonNguDao.cs" />
+    <Compile Include="ServiceDao\UserDao.cs" />
+    <Compile Include="ServiceDao\StoreDao.cs" />
+    <Compile Include="Services\WebApiCaller.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Utilities\Utilities.cs" />
+    <Compile Include="WebCommons\DisplayCommons.cs" />
+    <Compile Include="WebCommons\DropdownCommons.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NavbarController.cs" />
+    <Compile Include="Filters\AuthActionFilter.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\Navbar.cs" />
+    <Compile Include="Models\Roles.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.1\nativeBinaries\x64\msvcr100.dll">
+      <Link>SqlServerTypes\x64\msvcr100.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.1\nativeBinaries\x64\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x64\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.1\nativeBinaries\x86\msvcr100.dll">
+      <Link>SqlServerTypes\x86\msvcr100.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.1\nativeBinaries\x86\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x86\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Areas\DanhMuc\Views\NhanVien\ImgProfiles\default_profile.png" />
+    <Content Include="Content\bootstrap-datetimepicker.css" />
+    <Content Include="Content\bootstrap-datetimepicker.min.css" />
+    <Content Include="Content\bootstrap-select.css" />
+    <Content Include="Content\bootstrap-select.min.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\fullcalendar.css" />
+    <Content Include="Content\fullcalendar.min.css" />
+    <Content Include="Content\fullcalendar.print.css" />
+    <Content Include="Content\fullcalendar.print.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\CheckBox.css" />
+    <Content Include="css\Customize.css" />
+    <Content Include="css\Fileuploads\fileinput-rtl.css" />
+    <Content Include="css\Fileuploads\fileinput-rtl.min.css" />
+    <Content Include="css\Fileuploads\fileinput.css" />
+    <Content Include="css\Fileuploads\fileinput.min.css" />
+    <Content Include="css\jquery.dataTables.min.css" />
+    <Content Include="Areas\HeThong\Views\NguoiDung\Index.cshtml" />
+    <Content Include="Areas\HeThong\Views\Shared\usCreateNguoiDung.cshtml" />
+    <Content Include="Areas\HeThong\Views\NguoiDung\Permission.cshtml" />
+    <Content Include="Areas\HeThong\Views\NguoiDung\ChangePassword.cshtml" />
+    <Content Include="Areas\Reports\Views\web.config" />
+    <Content Include="Areas\Reports\Views\Tender\Index.cshtml" />
+    <Content Include="Datasets\dtReport.xsc">
+      <DependentUpon>dtReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="Areas\Reports\Views\Consolidation\Index.cshtml" />
+    <Content Include="Areas\Reports\Views\WeeklyHourly\Index.cshtml" />
+    <Content Include="Areas\Reports\Views\LossPrevention\Index.cshtml" />
+    <Content Include="Areas\ReportSales\Views\ItemSale\Index.cshtml" />
+    <Content Include="Areas\ReportSales\Views\ItemSaleByItem\Index.cshtml" />
+    <Content Include="Areas\ReportSales\Views\ItemSaleByTender\Index.cshtml" />
+    <Content Include="Areas\ReportSales\Views\web.config" />
+    <Content Include="Areas\ReportSales\Views\WeeklyHourlySale\Index.cshtml" />
+    <Content Include="Areas\DanhMuc\Views\Branch\Create.cshtml" />
+    <Content Include="Areas\DanhMuc\Views\Branch\Edit.cshtml" />
+    <Content Include="Areas\DanhMuc\Views\Branch\Index.cshtml" />
+    <Content Include="Areas\DanhMuc\Views\Store\Create.cshtml" />
+    <Content Include="Areas\DanhMuc\Views\Store\Edit.cshtml" />
+    <Content Include="Areas\DanhMuc\Views\Store\Index.cshtml" />
+    <Content Include="Areas\Reports\Views\DiscountByCode\Index.cshtml" />
+    <Content Include="Areas\ReportSales\Views\ItemSaleByDes\Index.cshtml" />
+    <None Include="Datasets\dtReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtReport.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Datasets\dtReport.xss">
+      <DependentUpon>dtReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\HRManage.pubxml" />
+    <Content Include="Imgs\doc-icon.png" />
+    <Content Include="Imgs\xls-icon.png" />
+    <Content Include="ReportViewers\DiscountByCode.aspx" />
+    <Content Include="ReportViewers\ItemSaleByDes.aspx" />
+    <Content Include="ReportViewers\ReportViewer.Master" />
+    <Content Include="Scripts\Charts\css\highcharts.scss" />
+    <Content Include="Scripts\Charts\js\highcharts-3d.js.map" />
+    <Content Include="Scripts\Charts\js\highcharts-more.js.map" />
+    <Content Include="Scripts\Charts\js\highcharts.js.map" />
+    <Content Include="Scripts\Charts\js\modules\accessibility.js.map" />
+    <Content Include="Scripts\Charts\js\modules\annotations.js.map" />
+    <Content Include="Scripts\Charts\js\modules\arrow-symbols.js.map" />
+    <Content Include="Scripts\Charts\js\modules\boost-canvas.js.map" />
+    <Content Include="Scripts\Charts\js\modules\boost.js.map" />
+    <Content Include="Scripts\Charts\js\modules\broken-axis.js.map" />
+    <Content Include="Scripts\Charts\js\modules\bullet.js.map" />
+    <Content Include="Scripts\Charts\js\modules\current-date-indicator.js.map" />
+    <Content Include="Scripts\Charts\js\modules\data.js.map" />
+    <Content Include="Scripts\Charts\js\modules\drag-panes.js.map" />
+    <Content Include="Scripts\Charts\js\modules\draggable-points.js.map" />
+    <Content Include="Scripts\Charts\js\modules\drilldown.js.map" />
+    <Content Include="Scripts\Charts\js\modules\export-data.js.map" />
+    <Content Include="Scripts\Charts\js\modules\exporting.js.map" />
+    <Content Include="Scripts\Charts\js\modules\funnel.js.map" />
+    <Content Include="Scripts\Charts\js\modules\gantt.js.map" />
+    <Content Include="Scripts\Charts\js\modules\grid-axis.js.map" />
+    <Content Include="Scripts\Charts\js\modules\heatmap.js.map" />
+    <Content Include="Scripts\Charts\js\modules\histogram-bellcurve.js.map" />
+    <Content Include="Scripts\Charts\js\modules\item-series.js.map" />
+    <Content Include="Scripts\Charts\js\modules\no-data-to-display.js.map" />
+    <Content Include="Scripts\Charts\js\modules\offline-exporting.js.map" />
+    <Content Include="Scripts\Charts\js\modules\oldie.js.map" />
+    <Content Include="Scripts\Charts\js\modules\overlapping-datalabels.js.map" />
+    <Content Include="Scripts\Charts\js\modules\parallel-coordinates.js.map" />
+    <Content Include="Scripts\Charts\js\modules\pareto.js.map" />
+    <Content Include="Scripts\Charts\js\modules\pathfinder.js.map" />
+    <Content Include="Scripts\Charts\js\modules\pattern-fill.js.map" />
+    <Content Include="Scripts\Charts\js\modules\sankey.js.map" />
+    <Content Include="Scripts\Charts\js\modules\series-label.js.map" />
+    <Content Include="Scripts\Charts\js\modules\solid-gauge.js.map" />
+    <Content Include="Scripts\Charts\js\modules\static-scale.js.map" />
+    <Content Include="Scripts\Charts\js\modules\stock.js.map" />
+    <Content Include="Scripts\Charts\js\modules\streamgraph.js.map" />
+    <Content Include="Scripts\Charts\js\modules\sunburst.js.map" />
+    <Content Include="Scripts\Charts\js\modules\tilemap.js.map" />
+    <Content Include="Scripts\Charts\js\modules\treegrid.js.map" />
+    <Content Include="Scripts\Charts\js\modules\treemap.js.map" />
+    <Content Include="Scripts\Charts\js\modules\variable-pie.js.map" />
+    <Content Include="Scripts\Charts\js\modules\variwide.js.map" />
+    <Content Include="Scripts\Charts\js\modules\vector.js.map" />
+    <Content Include="Scripts\Charts\js\modules\windbarb.js.map" />
+    <Content Include="Scripts\Charts\js\modules\wordcloud.js.map" />
+    <Content Include="Scripts\Charts\js\modules\xrange.js.map" />
+    <Content Include="Scripts\Charts\js\themes\avocado.js.map" />
+    <Content Include="Scripts\Charts\js\themes\dark-blue.js.map" />
+    <Content Include="Scripts\Charts\js\themes\dark-green.js.map" />
+    <Content Include="Scripts\Charts\js\themes\dark-unica.js.map" />
+    <Content Include="Scripts\Charts\js\themes\gray.js.map" />
+    <Content Include="Scripts\Charts\js\themes\grid-light.js.map" />
+    <Content Include="Scripts\Charts\js\themes\grid.js.map" />
+    <Content Include="Scripts\Charts\js\themes\sand-signika.js.map" />
+    <Content Include="Scripts\Charts\js\themes\skies.js.map" />
+    <Content Include="Scripts\Charts\js\themes\sunset.js.map" />
+    <Content Include="Scripts\Charts\modules\accessibility.js.map" />
+    <Content Include="Scripts\Charts\modules\annotations.js.map" />
+    <Content Include="Scripts\Charts\modules\arrow-symbols.js.map" />
+    <Content Include="Scripts\Charts\modules\boost-canvas.js.map" />
+    <Content Include="Scripts\Charts\modules\boost.js.map" />
+    <Content Include="Scripts\Charts\modules\broken-axis.js.map" />
+    <Content Include="Scripts\Charts\modules\bullet.js.map" />
+    <Content Include="Scripts\Charts\modules\current-date-indicator.js.map" />
+    <Content Include="Scripts\Charts\modules\data.js.map" />
+    <Content Include="Scripts\Charts\modules\drag-panes.js.map" />
+    <Content Include="Scripts\Charts\modules\draggable-points.js.map" />
+    <Content Include="Scripts\Charts\modules\drilldown.js.map" />
+    <Content Include="Scripts\Charts\modules\export-data.js.map" />
+    <Content Include="Scripts\Charts\modules\exporting.js.map" />
+    <Content Include="Scripts\Charts\modules\funnel.js.map" />
+    <Content Include="Scripts\Charts\modules\gantt.js.map" />
+    <Content Include="Scripts\Charts\modules\grid-axis.js.map" />
+    <Content Include="Scripts\Charts\modules\heatmap.js.map" />
+    <Content Include="Scripts\Charts\modules\histogram-bellcurve.js.map" />
+    <Content Include="Scripts\Charts\modules\item-series.js.map" />
+    <Content Include="Scripts\Charts\modules\no-data-to-display.js.map" />
+    <Content Include="Scripts\Charts\modules\offline-exporting.js.map" />
+    <Content Include="Scripts\Charts\modules\oldie.js.map" />
+    <Content Include="Scripts\Charts\modules\overlapping-datalabels.js.map" />
+    <Content Include="Scripts\Charts\modules\parallel-coordinates.js.map" />
+    <Content Include="Scripts\Charts\modules\pareto.js.map" />
+    <Content Include="Scripts\Charts\modules\pathfinder.js.map" />
+    <Content Include="Scripts\Charts\modules\pattern-fill.js.map" />
+    <Content Include="Scripts\Charts\modules\sankey.js.map" />
+    <Content Include="Scripts\Charts\modules\series-label.js.map" />
+    <Content Include="Scripts\Charts\modules\solid-gauge.js.map" />
+    <Content Include="Scripts\Charts\modules\static-scale.js.map" />
+    <Content Include="Scripts\Charts\modules\stock.js.map" />
+    <Content Include="Scripts\Charts\modules\streamgraph.js.map" />
+    <Content Include="Scripts\Charts\modules\sunburst.js.map" />
+    <Content Include="Scripts\Charts\modules\tilemap.js.map" />
+    <Content Include="Scripts\Charts\modules\treegrid.js.map" />
+    <Content Include="Scripts\Charts\modules\treemap.js.map" />
+    <Content Include="Scripts\Charts\modules\variable-pie.js.map" />
+    <Content Include="Scripts\Charts\modules\variwide.js.map" />
+    <Content Include="Scripts\Charts\modules\vector.js.map" />
+    <Content Include="Scripts\Charts\modules\windbarb.js.map" />
+    <Content Include="Scripts\Charts\modules\wordcloud.js.map" />
+    <Content Include="Scripts\Charts\modules\xrange.js.map" />
+    <Content Include="Scripts\Charts\themes\avocado.js.map" />
+    <Content Include="Scripts\Charts\themes\dark-blue.js.map" />
+    <Content Include="Scripts\Charts\themes\dark-green.js.map" />
+    <Content Include="Scripts\Charts\themes\dark-unica.js.map" />
+    <Content Include="Scripts\Charts\themes\gray.js.map" />
+    <Content Include="Scripts\Charts\themes\grid-light.js.map" />
+    <Content Include="Scripts\Charts\themes\grid.js.map" />
+    <Content Include="Scripts\Charts\themes\sand-signika.js.map" />
+    <Content Include="Scripts\Charts\themes\skies.js.map" />
+    <Content Include="Scripts\Charts\themes\sunset.js.map" />
+    <None Include="Scripts\jquery-2.0.0.intellisense.js" />
+    <Content Include="css\Treeview.css" />
+    <Content Include="Imgs\Logos\Branch\GF.jpg" />
+    <Content Include="Imgs\Logos\Branch\HS.jpg" />
+    <Content Include="Imgs\Logos\Branch\KY.jpg" />
+    <Content Include="Imgs\Logos\Branch\LP.jpg" />
+    <Content Include="Imgs\Logos\Branch\MK.jpg" />
+    <Content Include="Imgs\Logos\Branch\OO.jpg" />
+    <Content Include="Imgs\Logos\Branch\PG.jpg" />
+    <Content Include="Imgs\Logos\Branch\SK.jpg" />
+    <Content Include="Imgs\Logos\Branch\TC.jpg" />
+    <Content Include="Imgs\off-day.png" />
+    <Content Include="js\canvasjs.min.js" />
+    <Content Include="js\chart.js\Chart.bundle.js" />
+    <Content Include="js\chart.js\Chart.bundle.min.js" />
+    <Content Include="js\chart.js\Chart.js" />
+    <Content Include="js\chart.js\Chart.min.js" />
+    <Content Include="js\Commons.js" />
+    <Content Include="js\Dashboads\Home.js" />
+    <Content Include="js\Dialogue.js" />
+    <Content Include="js\Home.js" />
+    <Content Include="ReportViewers\ItemSaleByTender.aspx" />
+    <Content Include="ReportViewers\ItemSaleByItem.aspx" />
+    <Content Include="ReportViewers\LossPrevention.aspx" />
+    <Content Include="ReportViewers\ItemSale.aspx" />
+    <Content Include="ReportViewers\WeeklyHourlySale.aspx" />
+    <Content Include="ReportViewers\WeeklyHourly.aspx" />
+    <Content Include="ReportViewers\Tender.aspx" />
+    <Content Include="ReportViewers\Consolidation.aspx" />
+    <Content Include="Scripts\Charts\css\highcharts.css" />
+    <Content Include="Scripts\Charts\css\themes\dark-unica.css" />
+    <Content Include="Scripts\Charts\css\themes\grid-light.css" />
+    <Content Include="Scripts\Charts\css\themes\sand-signika.css" />
+    <Content Include="Scripts\Charts\es-modules\error.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\highcharts-3d.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\highcharts-more.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\highcharts.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\accessibility.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\annotations.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\arrow-symbols.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\boost-canvas.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\boost.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\broken-axis.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\bullet.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\current-date-indicator.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\data.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\drag-panes.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\draggable-points.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\drilldown.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\export-data.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\exporting.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\funnel.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\gantt.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\grid-axis.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\heatmap.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\histogram-bellcurve.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\item-series.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\no-data-to-display.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\offline-exporting.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\oldie.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\overlapping-datalabels.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\parallel-coordinates.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\pareto.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\pathfinder.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\pattern-fill.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\sankey.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\series-label.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\solid-gauge.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\static-scale.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\stock.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\streamgraph.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\sunburst.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\tilemap.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\treegrid.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\treemap.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\variable-pie.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\variwide.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\vector.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\windbarb.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\wordcloud.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\modules\xrange.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\themes\avocado.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\themes\avocado.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\themes\dark-blue.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\themes\dark-green.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\themes\dark-unica.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\themes\gray.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\themes\grid-light.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\themes\grid.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\themes\sand-signika.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\themes\skies.src.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\themes\sunset.js" />
+    <Content Include="Scripts\Charts\es-modules\masters\themes\sunset.src.js" />
+    <Content Include="Scripts\Charts\es-modules\mixins\ajax.js" />
+    <Content Include="Scripts\Charts\es-modules\mixins\centered-series.js" />
+    <Content Include="Scripts\Charts\es-modules\mixins\derived-series.js" />
+    <Content Include="Scripts\Charts\es-modules\mixins\draw-point.js" />
+    <Content Include="Scripts\Charts\es-modules\mixins\on-series.js" />
+    <Content Include="Scripts\Charts\es-modules\mixins\polygon.js" />
+    <Content Include="Scripts\Charts\es-modules\mixins\tree-series.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\a11y-i18n.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\annotations.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\bellcurve.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\boost-canvas.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\boost.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\broken-axis.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\bullet.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\data.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\drag-panes.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\draggable-points.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\drilldown.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\export-data.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\exporting.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\funnel.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\histogram.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\item-series.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\keyboard-navigation.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\no-data-to-display.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\offline-exporting.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\oldie.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\overlapping-datalabels.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\parallel-coordinates.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\pareto.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\pattern-fill.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\sankey.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\screen-reader.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\series-label.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\solid-gauge.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\static-scale.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\streamgraph.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\sunburst.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\tilemap.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\treemap.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\variable-pie.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\variwide.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\vector.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\windbarb.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\wordcloud.src.js" />
+    <Content Include="Scripts\Charts\es-modules\modules\xrange.src.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-3d\Axis.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-3d\Chart.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-3d\Column.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-3d\Globals.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-3d\Math.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-3d\Pie.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-3d\Scatter.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-3d\Series.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-3d\SVGRenderer.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-3d\VMLRenderer.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-gantt\ArrowSymbols.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-gantt\CurrentDateIndicator.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-gantt\GanttChart.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-gantt\GanttSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-gantt\GridAxis.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-gantt\Pathfinder.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-gantt\PathfinderAlgorithms.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-gantt\Tree.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-gantt\TreeGrid.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-map\ColorAxis.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-map\ColorSeriesMixin.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-map\GeoJSON.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-map\HeatmapSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-map\Map.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-map\MapAxis.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-map\MapBubbleSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-map\MapLineSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-map\MapNavigation.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-map\MapPointer.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-map\MapPointSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-map\MapSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-more\AreaRangeSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-more\AreaSplineRangeSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-more\BoxPlotSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-more\BubbleSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-more\ColumnRangeSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-more\ErrorBarSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-more\GaugeSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-more\Pane.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-more\Polar.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-more\PolygonSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-more\RadialAxis.js" />
+    <Content Include="Scripts\Charts\es-modules\parts-more\WaterfallSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\AreaSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\AreaSplineSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Axis.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\BarSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\CandlestickSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Chart.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Color.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\ColumnSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\DataGrouping.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\DataLabels.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\DateTimeAxis.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Dynamics.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\FlagsSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Globals.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Html.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Interaction.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Legend.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\LogarithmicAxis.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\MSPointer.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Navigator.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\OHLCSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Options.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\OrdinalAxis.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\PieSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\PlotBandSeries.experimental.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\PlotLineOrBand.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Point.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Pointer.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\RangeSelector.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Responsive.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\ScatterSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\ScrollablePlotArea.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Scrollbar.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Series.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\SplineSeries.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Stacking.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\StockChart.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\SvgRenderer.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Tick.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Time.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Tooltip.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\TouchPointer.js" />
+    <Content Include="Scripts\Charts\es-modules\parts\Utilities.js" />
+    <Content Include="Scripts\Charts\es-modules\supplemental.docs.js" />
+    <Content Include="Scripts\Charts\es-modules\themes\avocado.js" />
+    <Content Include="Scripts\Charts\es-modules\themes\dark-blue.js" />
+    <Content Include="Scripts\Charts\es-modules\themes\dark-green.js" />
+    <Content Include="Scripts\Charts\es-modules\themes\dark-unica.js" />
+    <Content Include="Scripts\Charts\es-modules\themes\gray.js" />
+    <Content Include="Scripts\Charts\es-modules\themes\grid-light.js" />
+    <Content Include="Scripts\Charts\es-modules\themes\grid.js" />
+    <Content Include="Scripts\Charts\es-modules\themes\sand-signika.js" />
+    <Content Include="Scripts\Charts\es-modules\themes\skies.js" />
+    <Content Include="Scripts\Charts\es-modules\themes\sunset.js" />
+    <Content Include="Scripts\Charts\highcharts-3d.js" />
+    <Content Include="Scripts\Charts\highcharts-3d.js.map" />
+    <Content Include="Scripts\Charts\highcharts-3d.src.js" />
+    <Content Include="Scripts\Charts\highcharts-more.js" />
+    <Content Include="Scripts\Charts\highcharts-more.js.map" />
+    <Content Include="Scripts\Charts\highcharts-more.src.js" />
+    <Content Include="Scripts\Charts\highcharts.js" />
+    <Content Include="Scripts\Charts\highcharts.js.map" />
+    <Content Include="Scripts\Charts\highcharts.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\error.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\highcharts-3d.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\highcharts-more.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\highcharts.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\accessibility.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\annotations.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\arrow-symbols.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\boost-canvas.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\boost.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\broken-axis.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\bullet.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\current-date-indicator.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\data.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\drag-panes.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\draggable-points.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\drilldown.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\export-data.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\exporting.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\funnel.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\gantt.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\grid-axis.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\heatmap.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\histogram-bellcurve.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\item-series.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\no-data-to-display.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\offline-exporting.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\oldie.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\overlapping-datalabels.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\parallel-coordinates.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\pareto.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\pathfinder.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\pattern-fill.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\sankey.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\series-label.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\solid-gauge.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\static-scale.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\stock.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\streamgraph.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\sunburst.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\tilemap.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\treegrid.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\treemap.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\variable-pie.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\variwide.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\vector.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\windbarb.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\wordcloud.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\modules\xrange.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\themes\avocado.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\themes\avocado.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\themes\dark-blue.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\themes\dark-green.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\themes\dark-unica.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\themes\gray.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\themes\grid-light.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\themes\grid.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\themes\sand-signika.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\themes\skies.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\themes\sunset.js" />
+    <Content Include="Scripts\Charts\js\es-modules\masters\themes\sunset.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\mixins\ajax.js" />
+    <Content Include="Scripts\Charts\js\es-modules\mixins\centered-series.js" />
+    <Content Include="Scripts\Charts\js\es-modules\mixins\derived-series.js" />
+    <Content Include="Scripts\Charts\js\es-modules\mixins\draw-point.js" />
+    <Content Include="Scripts\Charts\js\es-modules\mixins\on-series.js" />
+    <Content Include="Scripts\Charts\js\es-modules\mixins\polygon.js" />
+    <Content Include="Scripts\Charts\js\es-modules\mixins\tree-series.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\a11y-i18n.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\annotations.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\bellcurve.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\boost-canvas.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\boost.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\broken-axis.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\bullet.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\data.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\drag-panes.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\draggable-points.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\drilldown.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\export-data.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\exporting.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\funnel.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\histogram.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\item-series.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\keyboard-navigation.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\no-data-to-display.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\offline-exporting.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\oldie.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\overlapping-datalabels.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\parallel-coordinates.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\pareto.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\pattern-fill.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\sankey.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\screen-reader.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\series-label.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\solid-gauge.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\static-scale.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\streamgraph.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\sunburst.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\tilemap.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\treemap.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\variable-pie.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\variwide.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\vector.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\windbarb.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\wordcloud.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\modules\xrange.src.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-3d\Axis.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-3d\Chart.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-3d\Column.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-3d\Globals.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-3d\Math.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-3d\Pie.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-3d\Scatter.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-3d\Series.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-3d\SVGRenderer.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-3d\VMLRenderer.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-gantt\ArrowSymbols.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-gantt\CurrentDateIndicator.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-gantt\GanttChart.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-gantt\GanttSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-gantt\GridAxis.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-gantt\Pathfinder.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-gantt\PathfinderAlgorithms.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-gantt\Tree.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-gantt\TreeGrid.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-map\ColorAxis.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-map\ColorSeriesMixin.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-map\GeoJSON.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-map\HeatmapSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-map\Map.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-map\MapAxis.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-map\MapBubbleSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-map\MapLineSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-map\MapNavigation.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-map\MapPointer.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-map\MapPointSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-map\MapSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-more\AreaRangeSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-more\AreaSplineRangeSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-more\BoxPlotSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-more\BubbleSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-more\ColumnRangeSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-more\ErrorBarSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-more\GaugeSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-more\Pane.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-more\Polar.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-more\PolygonSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-more\RadialAxis.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts-more\WaterfallSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\AreaSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\AreaSplineSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Axis.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\BarSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\CandlestickSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Chart.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Color.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\ColumnSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\DataGrouping.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\DataLabels.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\DateTimeAxis.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Dynamics.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\FlagsSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Globals.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Html.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Interaction.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Legend.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\LogarithmicAxis.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\MSPointer.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Navigator.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\OHLCSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Options.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\OrdinalAxis.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\PieSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\PlotBandSeries.experimental.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\PlotLineOrBand.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Point.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Pointer.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\RangeSelector.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Responsive.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\ScatterSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\ScrollablePlotArea.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Scrollbar.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Series.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\SplineSeries.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Stacking.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\StockChart.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\SvgRenderer.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Tick.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Time.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Tooltip.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\TouchPointer.js" />
+    <Content Include="Scripts\Charts\js\es-modules\parts\Utilities.js" />
+    <Content Include="Scripts\Charts\js\es-modules\supplemental.docs.js" />
+    <Content Include="Scripts\Charts\js\es-modules\themes\avocado.js" />
+    <Content Include="Scripts\Charts\js\es-modules\themes\dark-blue.js" />
+    <Content Include="Scripts\Charts\js\es-modules\themes\dark-green.js" />
+    <Content Include="Scripts\Charts\js\es-modules\themes\dark-unica.js" />
+    <Content Include="Scripts\Charts\js\es-modules\themes\gray.js" />
+    <Content Include="Scripts\Charts\js\es-modules\themes\grid-light.js" />
+    <Content Include="Scripts\Charts\js\es-modules\themes\grid.js" />
+    <Content Include="Scripts\Charts\js\es-modules\themes\sand-signika.js" />
+    <Content Include="Scripts\Charts\js\es-modules\themes\skies.js" />
+    <Content Include="Scripts\Charts\js\es-modules\themes\sunset.js" />
+    <Content Include="Scripts\Charts\js\highcharts-3d.js" />
+    <Content Include="Scripts\Charts\js\highcharts-3d.src.js" />
+    <Content Include="Scripts\Charts\js\highcharts-more.js" />
+    <Content Include="Scripts\Charts\js\highcharts-more.src.js" />
+    <Content Include="Scripts\Charts\js\highcharts.js" />
+    <Content Include="Scripts\Charts\js\highcharts.src.js" />
+    <Content Include="Scripts\Charts\js\modules\accessibility.js" />
+    <Content Include="Scripts\Charts\js\modules\accessibility.src.js" />
+    <Content Include="Scripts\Charts\js\modules\annotations.js" />
+    <Content Include="Scripts\Charts\js\modules\annotations.src.js" />
+    <Content Include="Scripts\Charts\js\modules\arrow-symbols.js" />
+    <Content Include="Scripts\Charts\js\modules\arrow-symbols.src.js" />
+    <Content Include="Scripts\Charts\js\modules\boost-canvas.js" />
+    <Content Include="Scripts\Charts\js\modules\boost-canvas.src.js" />
+    <Content Include="Scripts\Charts\js\modules\boost.js" />
+    <Content Include="Scripts\Charts\js\modules\boost.src.js" />
+    <Content Include="Scripts\Charts\js\modules\broken-axis.js" />
+    <Content Include="Scripts\Charts\js\modules\broken-axis.src.js" />
+    <Content Include="Scripts\Charts\js\modules\bullet.js" />
+    <Content Include="Scripts\Charts\js\modules\bullet.src.js" />
+    <Content Include="Scripts\Charts\js\modules\current-date-indicator.js" />
+    <Content Include="Scripts\Charts\js\modules\current-date-indicator.src.js" />
+    <Content Include="Scripts\Charts\js\modules\data.js" />
+    <Content Include="Scripts\Charts\js\modules\data.src.js" />
+    <Content Include="Scripts\Charts\js\modules\drag-panes.js" />
+    <Content Include="Scripts\Charts\js\modules\drag-panes.src.js" />
+    <Content Include="Scripts\Charts\js\modules\draggable-points.js" />
+    <Content Include="Scripts\Charts\js\modules\draggable-points.src.js" />
+    <Content Include="Scripts\Charts\js\modules\drilldown.js" />
+    <Content Include="Scripts\Charts\js\modules\drilldown.src.js" />
+    <Content Include="Scripts\Charts\js\modules\export-data.js" />
+    <Content Include="Scripts\Charts\js\modules\export-data.src.js" />
+    <Content Include="Scripts\Charts\js\modules\exporting.js" />
+    <Content Include="Scripts\Charts\js\modules\exporting.src.js" />
+    <Content Include="Scripts\Charts\js\modules\funnel.js" />
+    <Content Include="Scripts\Charts\js\modules\funnel.src.js" />
+    <Content Include="Scripts\Charts\js\modules\gantt.js" />
+    <Content Include="Scripts\Charts\js\modules\gantt.src.js" />
+    <Content Include="Scripts\Charts\js\modules\grid-axis.js" />
+    <Content Include="Scripts\Charts\js\modules\grid-axis.src.js" />
+    <Content Include="Scripts\Charts\js\modules\heatmap.js" />
+    <Content Include="Scripts\Charts\js\modules\heatmap.src.js" />
+    <Content Include="Scripts\Charts\js\modules\histogram-bellcurve.js" />
+    <Content Include="Scripts\Charts\js\modules\histogram-bellcurve.src.js" />
+    <Content Include="Scripts\Charts\js\modules\item-series.js" />
+    <Content Include="Scripts\Charts\js\modules\item-series.src.js" />
+    <Content Include="Scripts\Charts\js\modules\no-data-to-display.js" />
+    <Content Include="Scripts\Charts\js\modules\no-data-to-display.src.js" />
+    <Content Include="Scripts\Charts\js\modules\offline-exporting.js" />
+    <Content Include="Scripts\Charts\js\modules\offline-exporting.src.js" />
+    <Content Include="Scripts\Charts\js\modules\oldie.js" />
+    <Content Include="Scripts\Charts\js\modules\oldie.src.js" />
+    <Content Include="Scripts\Charts\js\modules\overlapping-datalabels.js" />
+    <Content Include="Scripts\Charts\js\modules\overlapping-datalabels.src.js" />
+    <Content Include="Scripts\Charts\js\modules\parallel-coordinates.js" />
+    <Content Include="Scripts\Charts\js\modules\parallel-coordinates.src.js" />
+    <Content Include="Scripts\Charts\js\modules\pareto.js" />
+    <Content Include="Scripts\Charts\js\modules\pareto.src.js" />
+    <Content Include="Scripts\Charts\js\modules\pathfinder.js" />
+    <Content Include="Scripts\Charts\js\modules\pathfinder.src.js" />
+    <Content Include="Scripts\Charts\js\modules\pattern-fill.js" />
+    <Content Include="Scripts\Charts\js\modules\pattern-fill.src.js" />
+    <Content Include="Scripts\Charts\js\modules\sankey.js" />
+    <Content Include="Scripts\Charts\js\modules\sankey.src.js" />
+    <Content Include="Scripts\Charts\js\modules\series-label.js" />
+    <Content Include="Scripts\Charts\js\modules\series-label.src.js" />
+    <Content Include="Scripts\Charts\js\modules\solid-gauge.js" />
+    <Content Include="Scripts\Charts\js\modules\solid-gauge.src.js" />
+    <Content Include="Scripts\Charts\js\modules\static-scale.js" />
+    <Content Include="Scripts\Charts\js\modules\static-scale.src.js" />
+    <Content Include="Scripts\Charts\js\modules\stock.js" />
+    <Content Include="Scripts\Charts\js\modules\stock.src.js" />
+    <Content Include="Scripts\Charts\js\modules\streamgraph.js" />
+    <Content Include="Scripts\Charts\js\modules\streamgraph.src.js" />
+    <Content Include="Scripts\Charts\js\modules\sunburst.js" />
+    <Content Include="Scripts\Charts\js\modules\sunburst.src.js" />
+    <Content Include="Scripts\Charts\js\modules\tilemap.js" />
+    <Content Include="Scripts\Charts\js\modules\tilemap.src.js" />
+    <Content Include="Scripts\Charts\js\modules\treegrid.js" />
+    <Content Include="Scripts\Charts\js\modules\treegrid.src.js" />
+    <Content Include="Scripts\Charts\js\modules\treemap.js" />
+    <Content Include="Scripts\Charts\js\modules\treemap.src.js" />
+    <Content Include="Scripts\Charts\js\modules\variable-pie.js" />
+    <Content Include="Scripts\Charts\js\modules\variable-pie.src.js" />
+    <Content Include="Scripts\Charts\js\modules\variwide.js" />
+    <Content Include="Scripts\Charts\js\modules\variwide.src.js" />
+    <Content Include="Scripts\Charts\js\modules\vector.js" />
+    <Content Include="Scripts\Charts\js\modules\vector.src.js" />
+    <Content Include="Scripts\Charts\js\modules\windbarb.js" />
+    <Content Include="Scripts\Charts\js\modules\windbarb.src.js" />
+    <Content Include="Scripts\Charts\js\modules\wordcloud.js" />
+    <Content Include="Scripts\Charts\js\modules\wordcloud.src.js" />
+    <Content Include="Scripts\Charts\js\modules\xrange.js" />
+    <Content Include="Scripts\Charts\js\modules\xrange.src.js" />
+    <Content Include="Scripts\Charts\js\themes\avocado.js" />
+    <Content Include="Scripts\Charts\js\themes\avocado.src.js" />
+    <Content Include="Scripts\Charts\js\themes\dark-blue.js" />
+    <Content Include="Scripts\Charts\js\themes\dark-blue.src.js" />
+    <Content Include="Scripts\Charts\js\themes\dark-green.js" />
+    <Content Include="Scripts\Charts\js\themes\dark-green.src.js" />
+    <Content Include="Scripts\Charts\js\themes\dark-unica.js" />
+    <Content Include="Scripts\Charts\js\themes\dark-unica.src.js" />
+    <Content Include="Scripts\Charts\js\themes\gray.js" />
+    <Content Include="Scripts\Charts\js\themes\gray.src.js" />
+    <Content Include="Scripts\Charts\js\themes\grid-light.js" />
+    <Content Include="Scripts\Charts\js\themes\grid-light.src.js" />
+    <Content Include="Scripts\Charts\js\themes\grid.js" />
+    <Content Include="Scripts\Charts\js\themes\grid.src.js" />
+    <Content Include="Scripts\Charts\js\themes\sand-signika.js" />
+    <Content Include="Scripts\Charts\js\themes\sand-signika.src.js" />
+    <Content Include="Scripts\Charts\js\themes\skies.js" />
+    <Content Include="Scripts\Charts\js\themes\skies.src.js" />
+    <Content Include="Scripts\Charts\js\themes\sunset.js" />
+    <Content Include="Scripts\Charts\js\themes\sunset.src.js" />
+    <Content Include="Scripts\Charts\lib\canvg.js" />
+    <Content Include="Scripts\Charts\lib\canvg.src.js" />
+    <Content Include="Scripts\Charts\lib\jspdf.js" />
+    <Content Include="Scripts\Charts\lib\jspdf.src.js" />
+    <Content Include="Scripts\Charts\lib\rgbcolor.js" />
+    <Content Include="Scripts\Charts\lib\rgbcolor.src.js" />
+    <Content Include="Scripts\Charts\lib\svg2pdf.js" />
+    <Content Include="Scripts\Charts\lib\svg2pdf.src.js" />
+    <Content Include="Scripts\Charts\modules\accessibility.js" />
+    <Content Include="Scripts\Charts\modules\accessibility.src.js" />
+    <Content Include="Scripts\Charts\modules\annotations.js" />
+    <Content Include="Scripts\Charts\modules\annotations.src.js" />
+    <Content Include="Scripts\Charts\modules\arrow-symbols.js" />
+    <Content Include="Scripts\Charts\modules\arrow-symbols.src.js" />
+    <Content Include="Scripts\Charts\modules\boost-canvas.js" />
+    <Content Include="Scripts\Charts\modules\boost-canvas.src.js" />
+    <Content Include="Scripts\Charts\modules\boost.js" />
+    <Content Include="Scripts\Charts\modules\boost.src.js" />
+    <Content Include="Scripts\Charts\modules\broken-axis.js" />
+    <Content Include="Scripts\Charts\modules\broken-axis.src.js" />
+    <Content Include="Scripts\Charts\modules\bullet.js" />
+    <Content Include="Scripts\Charts\modules\bullet.src.js" />
+    <Content Include="Scripts\Charts\modules\current-date-indicator.js" />
+    <Content Include="Scripts\Charts\modules\current-date-indicator.src.js" />
+    <Content Include="Scripts\Charts\modules\data.js" />
+    <Content Include="Scripts\Charts\modules\data.src.js" />
+    <Content Include="Scripts\Charts\modules\drag-panes.js" />
+    <Content Include="Scripts\Charts\modules\drag-panes.src.js" />
+    <Content Include="Scripts\Charts\modules\draggable-points.js" />
+    <Content Include="Scripts\Charts\modules\draggable-points.src.js" />
+    <Content Include="Scripts\Charts\modules\drilldown.js" />
+    <Content Include="Scripts\Charts\modules\drilldown.src.js" />
+    <Content Include="Scripts\Charts\modules\export-data.js" />
+    <Content Include="Scripts\Charts\modules\export-data.src.js" />
+    <Content Include="Scripts\Charts\modules\exporting.js" />
+    <Content Include="Scripts\Charts\modules\exporting.src.js" />
+    <Content Include="Scripts\Charts\modules\funnel.js" />
+    <Content Include="Scripts\Charts\modules\funnel.src.js" />
+    <Content Include="Scripts\Charts\modules\gantt.js" />
+    <Content Include="Scripts\Charts\modules\gantt.src.js" />
+    <Content Include="Scripts\Charts\modules\grid-axis.js" />
+    <Content Include="Scripts\Charts\modules\grid-axis.src.js" />
+    <Content Include="Scripts\Charts\modules\heatmap.js" />
+    <Content Include="Scripts\Charts\modules\heatmap.src.js" />
+    <Content Include="Scripts\Charts\modules\histogram-bellcurve.js" />
+    <Content Include="Scripts\Charts\modules\histogram-bellcurve.src.js" />
+    <Content Include="Scripts\Charts\modules\item-series.js" />
+    <Content Include="Scripts\Charts\modules\item-series.src.js" />
+    <Content Include="Scripts\Charts\modules\no-data-to-display.js" />
+    <Content Include="Scripts\Charts\modules\no-data-to-display.src.js" />
+    <Content Include="Scripts\Charts\modules\offline-exporting.js" />
+    <Content Include="Scripts\Charts\modules\offline-exporting.src.js" />
+    <Content Include="Scripts\Charts\modules\oldie.js" />
+    <Content Include="Scripts\Charts\modules\oldie.src.js" />
+    <Content Include="Scripts\Charts\modules\overlapping-datalabels.js" />
+    <Content Include="Scripts\Charts\modules\overlapping-datalabels.src.js" />
+    <Content Include="Scripts\Charts\modules\parallel-coordinates.js" />
+    <Content Include="Scripts\Charts\modules\parallel-coordinates.src.js" />
+    <Content Include="Scripts\Charts\modules\pareto.js" />
+    <Content Include="Scripts\Charts\modules\pareto.src.js" />
+    <Content Include="Scripts\Charts\modules\pathfinder.js" />
+    <Content Include="Scripts\Charts\modules\pathfinder.src.js" />
+    <Content Include="Scripts\Charts\modules\pattern-fill.js" />
+    <Content Include="Scripts\Charts\modules\pattern-fill.src.js" />
+    <Content Include="Scripts\Charts\modules\sankey.js" />
+    <Content Include="Scripts\Charts\modules\sankey.src.js" />
+    <Content Include="Scripts\Charts\modules\series-label.js" />
+    <Content Include="Scripts\Charts\modules\series-label.src.js" />
+    <Content Include="Scripts\Charts\modules\solid-gauge.js" />
+    <Content Include="Scripts\Charts\modules\solid-gauge.src.js" />
+    <Content Include="Scripts\Charts\modules\static-scale.js" />
+    <Content Include="Scripts\Charts\modules\static-scale.src.js" />
+    <Content Include="Scripts\Charts\modules\stock.js" />
+    <Content Include="Scripts\Charts\modules\stock.src.js" />
+    <Content Include="Scripts\Charts\modules\streamgraph.js" />
+    <Content Include="Scripts\Charts\modules\streamgraph.src.js" />
+    <Content Include="Scripts\Charts\modules\sunburst.js" />
+    <Content Include="Scripts\Charts\modules\sunburst.src.js" />
+    <Content Include="Scripts\Charts\modules\tilemap.js" />
+    <Content Include="Scripts\Charts\modules\tilemap.src.js" />
+    <Content Include="Scripts\Charts\modules\treegrid.js" />
+    <Content Include="Scripts\Charts\modules\treegrid.src.js" />
+    <Content Include="Scripts\Charts\modules\treemap.js" />
+    <Content Include="Scripts\Charts\modules\treemap.src.js" />
+    <Content Include="Scripts\Charts\modules\variable-pie.js" />
+    <Content Include="Scripts\Charts\modules\variable-pie.src.js" />
+    <Content Include="Scripts\Charts\modules\variwide.js" />
+    <Content Include="Scripts\Charts\modules\variwide.src.js" />
+    <Content Include="Scripts\Charts\modules\vector.js" />
+    <Content Include="Scripts\Charts\modules\vector.src.js" />
+    <Content Include="Scripts\Charts\modules\windbarb.js" />
+    <Content Include="Scripts\Charts\modules\windbarb.src.js" />
+    <Content Include="Scripts\Charts\modules\wordcloud.js" />
+    <Content Include="Scripts\Charts\modules\wordcloud.src.js" />
+    <Content Include="Scripts\Charts\modules\xrange.js" />
+    <Content Include="Scripts\Charts\modules\xrange.src.js" />
+    <Content Include="Scripts\Charts\themes\avocado.js" />
+    <Content Include="Scripts\Charts\themes\avocado.src.js" />
+    <Content Include="Scripts\Charts\themes\dark-blue.js" />
+    <Content Include="Scripts\Charts\themes\dark-blue.src.js" />
+    <Content Include="Scripts\Charts\themes\dark-green.js" />
+    <Content Include="Scripts\Charts\themes\dark-green.src.js" />
+    <Content Include="Scripts\Charts\themes\dark-unica.js" />
+    <Content Include="Scripts\Charts\themes\dark-unica.src.js" />
+    <Content Include="Scripts\Charts\themes\gray.js" />
+    <Content Include="Scripts\Charts\themes\gray.src.js" />
+    <Content Include="Scripts\Charts\themes\grid-light.js" />
+    <Content Include="Scripts\Charts\themes\grid-light.src.js" />
+    <Content Include="Scripts\Charts\themes\grid.js" />
+    <Content Include="Scripts\Charts\themes\grid.src.js" />
+    <Content Include="Scripts\Charts\themes\sand-signika.js" />
+    <Content Include="Scripts\Charts\themes\sand-signika.src.js" />
+    <Content Include="Scripts\Charts\themes\skies.js" />
+    <Content Include="Scripts\Charts\themes\skies.src.js" />
+    <Content Include="Scripts\Charts\themes\sunset.js" />
+    <Content Include="Scripts\Charts\themes\sunset.src.js" />
+    <Content Include="Scripts\fullcalendar\fullcalendar.js" />
+    <Content Include="Scripts\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Scripts\fullcalendar\gcal.js" />
+    <Content Include="Scripts\fullcalendar\gcal.min.js" />
+    <Content Include="Scripts\fullcalendar\locale-all.js" />
+    <Content Include="Scripts\fullcalendar\locale\af.js" />
+    <Content Include="Scripts\fullcalendar\locale\ar-dz.js" />
+    <Content Include="Scripts\fullcalendar\locale\ar-kw.js" />
+    <Content Include="Scripts\fullcalendar\locale\ar-ly.js" />
+    <Content Include="Scripts\fullcalendar\locale\ar-ma.js" />
+    <Content Include="Scripts\fullcalendar\locale\ar-sa.js" />
+    <Content Include="Scripts\fullcalendar\locale\ar-tn.js" />
+    <Content Include="Scripts\fullcalendar\locale\ar.js" />
+    <Content Include="Scripts\fullcalendar\locale\bg.js" />
+    <Content Include="Scripts\fullcalendar\locale\ca.js" />
+    <Content Include="Scripts\fullcalendar\locale\cs.js" />
+    <Content Include="Scripts\fullcalendar\locale\da.js" />
+    <Content Include="Scripts\fullcalendar\locale\de-at.js" />
+    <Content Include="Scripts\fullcalendar\locale\de-ch.js" />
+    <Content Include="Scripts\fullcalendar\locale\de.js" />
+    <Content Include="Scripts\fullcalendar\locale\el.js" />
+    <Content Include="Scripts\fullcalendar\locale\en-au.js" />
+    <Content Include="Scripts\fullcalendar\locale\en-ca.js" />
+    <Content Include="Scripts\fullcalendar\locale\en-gb.js" />
+    <Content Include="Scripts\fullcalendar\locale\en-ie.js" />
+    <Content Include="Scripts\fullcalendar\locale\en-nz.js" />
+    <Content Include="Scripts\fullcalendar\locale\es-do.js" />
+    <Content Include="Scripts\fullcalendar\locale\es.js" />
+    <Content Include="Scripts\fullcalendar\locale\et.js" />
+    <Content Include="Scripts\fullcalendar\locale\eu.js" />
+    <Content Include="Scripts\fullcalendar\locale\fa.js" />
+    <Content Include="Scripts\fullcalendar\locale\fi.js" />
+    <Content Include="Scripts\fullcalendar\locale\fr-ca.js" />
+    <Content Include="Scripts\fullcalendar\locale\fr-ch.js" />
+    <Content Include="Scripts\fullcalendar\locale\fr.js" />
+    <Content Include="Scripts\fullcalendar\locale\gl.js" />
+    <Content Include="Scripts\fullcalendar\locale\he.js" />
+    <Content Include="Scripts\fullcalendar\locale\hi.js" />
+    <Content Include="Scripts\fullcalendar\locale\hr.js" />
+    <Content Include="Scripts\fullcalendar\locale\hu.js" />
+    <Content Include="Scripts\fullcalendar\locale\id.js" />
+    <Content Include="Scripts\fullcalendar\locale\is.js" />
+    <Content Include="Scripts\fullcalendar\locale\it.js" />
+    <Content Include="Scripts\fullcalendar\locale\ja.js" />
+    <Content Include="Scripts\fullcalendar\locale\kk.js" />
+    <Content Include="Scripts\fullcalendar\locale\ko.js" />
+    <Content Include="Scripts\fullcalendar\locale\lb.js" />
+    <Content Include="Scripts\fullcalendar\locale\lt.js" />
+    <Content Include="Scripts\fullcalendar\locale\lv.js" />
+    <Content Include="Scripts\fullcalendar\locale\mk.js" />
+    <Content Include="Scripts\fullcalendar\locale\ms-my.js" />
+    <Content Include="Scripts\fullcalendar\locale\ms.js" />
+    <Content Include="Scripts\fullcalendar\locale\nb.js" />
+    <Content Include="Scripts\fullcalendar\locale\nl-be.js" />
+    <Content Include="Scripts\fullcalendar\locale\nl.js" />
+    <Content Include="Scripts\fullcalendar\locale\nn.js" />
+    <Content Include="Scripts\fullcalendar\locale\pl.js" />
+    <Content Include="Scripts\fullcalendar\locale\pt-br.js" />
+    <Content Include="Scripts\fullcalendar\locale\pt.js" />
+    <Content Include="Scripts\fullcalendar\locale\ro.js" />
+    <Content Include="Scripts\fullcalendar\locale\ru.js" />
+    <Content Include="Scripts\fullcalendar\locale\sk.js" />
+    <Content Include="Scripts\fullcalendar\locale\sl.js" />
+    <Content Include="Scripts\fullcalendar\locale\sr-cyrl.js" />
+    <Content Include="Scripts\fullcalendar\locale\sr.js" />
+    <Content Include="Scripts\fullcalendar\locale\sv.js" />
+    <Content Include="Scripts\fullcalendar\locale\th.js" />
+    <Content Include="Scripts\fullcalendar\locale\tr.js" />
+    <Content Include="Scripts\fullcalendar\locale\uk.js" />
+    <Content Include="Scripts\fullcalendar\locale\vi.js" />
+    <Content Include="Scripts\fullcalendar\locale\zh-cn.js" />
+    <Content Include="Scripts\fullcalendar\locale\zh-tw.js" />
+    <Content Include="Scripts\jquery-2.0.0.js" />
+    <Content Include="Scripts\jquery-2.0.0.min.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="css\plugins\dataTables\dataTables.bootstrap.css" />
+    <Content Include="css\plugins\morris\morris-0.4.3.min.css" />
+    <Content Include="css\plugins\social-buttons\social-buttons.css" />
+    <Content Include="css\plugins\timeline\timeline.css" />
+    <Content Include="css\sb-admin.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="font-awesome\css\font-awesome.css" />
+    <Content Include="font-awesome\css\font-awesome.min.css" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Imgs\access-denied.jpg" />
+    <Content Include="Imgs\default_profile.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\demo\dashboard-demo.js" />
+    <Content Include="js\demo\flot-demo.js" />
+    <Content Include="js\demo\morris-demo.js" />
+    <Content Include="js\fileinput.js" />
+    <Content Include="js\fileinput.min.js" />
+    <Content Include="js\jquery-1.10.2.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\plugins\dataTables\dataTables.bootstrap.js" />
+    <Content Include="js\plugins\dataTables\jquery.dataTables.js" />
+    <Content Include="js\plugins\flot\excanvas.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.js" />
+    <Content Include="js\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="js\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="js\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="js\plugins\metisMenu\jquery.metisMenu.js" />
+    <Content Include="js\plugins\morris\morris.js" />
+    <Content Include="js\plugins\morris\raphael-2.1.0.min.js" />
+    <Content Include="js\sb-admin.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\bootstrap-select.js" />
+    <Content Include="Scripts\bootstrap-select.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\i18n\defaults-ar_AR.js" />
+    <Content Include="Scripts\i18n\defaults-ar_AR.min.js" />
+    <Content Include="Scripts\i18n\defaults-bg_BG.js" />
+    <Content Include="Scripts\i18n\defaults-bg_BG.min.js" />
+    <Content Include="Scripts\i18n\defaults-cro_CRO.js" />
+    <Content Include="Scripts\i18n\defaults-cro_CRO.min.js" />
+    <Content Include="Scripts\i18n\defaults-cs_CZ.js" />
+    <Content Include="Scripts\i18n\defaults-cs_CZ.min.js" />
+    <Content Include="Scripts\i18n\defaults-da_DK.js" />
+    <Content Include="Scripts\i18n\defaults-da_DK.min.js" />
+    <Content Include="Scripts\i18n\defaults-de_DE.js" />
+    <Content Include="Scripts\i18n\defaults-de_DE.min.js" />
+    <Content Include="Scripts\i18n\defaults-en_US.js" />
+    <Content Include="Scripts\i18n\defaults-en_US.min.js" />
+    <Content Include="Scripts\i18n\defaults-es_CL.js" />
+    <Content Include="Scripts\i18n\defaults-es_CL.min.js" />
+    <Content Include="Scripts\i18n\defaults-es_ES.js" />
+    <Content Include="Scripts\i18n\defaults-es_ES.min.js" />
+    <Content Include="Scripts\i18n\defaults-eu.js" />
+    <Content Include="Scripts\i18n\defaults-eu.min.js" />
+    <Content Include="Scripts\i18n\defaults-fa_IR.js" />
+    <Content Include="Scripts\i18n\defaults-fa_IR.min.js" />
+    <Content Include="Scripts\i18n\defaults-fi_FI.js" />
+    <Content Include="Scripts\i18n\defaults-fi_FI.min.js" />
+    <Content Include="Scripts\i18n\defaults-fr_FR.js" />
+    <Content Include="Scripts\i18n\defaults-fr_FR.min.js" />
+    <Content Include="Scripts\i18n\defaults-hu_HU.js" />
+    <Content Include="Scripts\i18n\defaults-hu_HU.min.js" />
+    <Content Include="Scripts\i18n\defaults-id_ID.js" />
+    <Content Include="Scripts\i18n\defaults-id_ID.min.js" />
+    <Content Include="Scripts\i18n\defaults-it_IT.js" />
+    <Content Include="Scripts\i18n\defaults-it_IT.min.js" />
+    <Content Include="Scripts\i18n\defaults-ko_KR.js" />
+    <Content Include="Scripts\i18n\defaults-ko_KR.min.js" />
+    <Content Include="Scripts\i18n\defaults-lt_LT.js" />
+    <Content Include="Scripts\i18n\defaults-lt_LT.min.js" />
+    <Content Include="Scripts\i18n\defaults-nb_NO.js" />
+    <Content Include="Scripts\i18n\defaults-nb_NO.min.js" />
+    <Content Include="Scripts\i18n\defaults-nl_NL.js" />
+    <Content Include="Scripts\i18n\defaults-nl_NL.min.js" />
+    <Content Include="Scripts\i18n\defaults-pl_PL.js" />
+    <Content Include="Scripts\i18n\defaults-pl_PL.min.js" />
+    <Content Include="Scripts\i18n\defaults-pt_BR.js" />
+    <Content Include="Scripts\i18n\defaults-pt_BR.min.js" />
+    <Content Include="Scripts\i18n\defaults-pt_PT.js" />
+    <Content Include="Scripts\i18n\defaults-pt_PT.min.js" />
+    <Content Include="Scripts\i18n\defaults-ro_RO.js" />
+    <Content Include="Scripts\i18n\defaults-ro_RO.min.js" />
+    <Content Include="Scripts\i18n\defaults-ru_RU.js" />
+    <Content Include="Scripts\i18n\defaults-ru_RU.min.js" />
+    <Content Include="Scripts\i18n\defaults-sk_SK.js" />
+    <Content Include="Scripts\i18n\defaults-sk_SK.min.js" />
+    <Content Include="Scripts\i18n\defaults-sl_SI.js" />
+    <Content Include="Scripts\i18n\defaults-sl_SI.min.js" />
+    <Content Include="Scripts\i18n\defaults-sv_SE.js" />
+    <Content Include="Scripts\i18n\defaults-sv_SE.min.js" />
+    <Content Include="Scripts\i18n\defaults-tr_TR.js" />
+    <Content Include="Scripts\i18n\defaults-tr_TR.min.js" />
+    <Content Include="Scripts\i18n\defaults-ua_UA.js" />
+    <Content Include="Scripts\i18n\defaults-ua_UA.min.js" />
+    <Content Include="Scripts\i18n\defaults-zh_CN.js" />
+    <Content Include="Scripts\i18n\defaults-zh_CN.min.js" />
+    <Content Include="Scripts\i18n\defaults-zh_TW.js" />
+    <Content Include="Scripts\i18n\defaults-zh_TW.min.js" />
+    <Content Include="Scripts\libs\FileSaver\FileSaver.min.js" />
+    <Content Include="Scripts\libs\html2canvas\html2canvas.min.js" />
+    <Content Include="Scripts\libs\js-xlsx\xlsx.core.min.js" />
+    <Content Include="Scripts\libs\jsPDF-AutoTable\jspdf.plugin.autotable.js" />
+    <Content Include="Scripts\libs\jsPDF-AutoTable\LICENSE.txt" />
+    <Content Include="Scripts\libs\jsPDF\jspdf.min.js" />
+    <Content Include="Scripts\libs\jsPDF\MIT-LICENSE.txt" />
+    <Content Include="Scripts\libs\pdfmake\mirza_fonts.js" />
+    <Content Include="Scripts\libs\pdfmake\pdfmake.min.js" />
+    <Content Include="Scripts\libs\pdfmake\vfs_fonts.js" />
+    <Content Include="Scripts\moment-with-locales.js" />
+    <Content Include="Scripts\moment-with-locales.min.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\tableExport.min.js" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_navbar.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Scripts\libs\FileSaver\LICENSE.md" />
+    <Content Include="Scripts\libs\html2canvas\LICENSE" />
+    <Content Include="Scripts\libs\js-xlsx\LICENSE" />
+    <Content Include="Scripts\libs\pdfmake\LICENSE" />
+    <Content Include="Views\Shared\usCongVanMoi.cshtml" />
+    <Content Include="Views\Dashboad\Index2.cshtml" />
+    <Content Include="Views\Dashboad\Index.cshtml" />
+    <Content Include="Views\HomeBackup\Denie.cshtml" />
+    <Content Include="Views\HomeBackup\GetChartByBranch.cshtml" />
+    <Content Include="Views\HomeBackup\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\DanhMuc\Models\" />
+    <Folder Include="Areas\ReportSales\Views\Shared\" />
+    <Folder Include="Areas\Reports\Views\Navbar\" />
+    <Folder Include="Areas\Reports\Views\Shared\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Reports\RdlcTemps\" />
+    <Folder Include="Uploads\CongTacs\" />
+    <Folder Include="Uploads\CongVanDens\" />
+    <Folder Include="Uploads\Users\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="font-awesome\less\bordered-pulled.less" />
+    <Content Include="font-awesome\less\core.less" />
+    <Content Include="font-awesome\less\fixed-width.less" />
+    <Content Include="font-awesome\less\font-awesome.less" />
+    <Content Include="font-awesome\less\icons.less" />
+    <Content Include="font-awesome\less\larger.less" />
+    <Content Include="font-awesome\less\list.less" />
+    <Content Include="font-awesome\less\mixins.less" />
+    <Content Include="font-awesome\less\path.less" />
+    <Content Include="font-awesome\less\rotated-flipped.less" />
+    <Content Include="font-awesome\less\spinning.less" />
+    <Content Include="font-awesome\less\stacked.less" />
+    <Content Include="font-awesome\less\variables.less" />
+    <Content Include="font-awesome\scss\font-awesome.scss" />
+    <Content Include="font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="font-awesome\scss\_core.scss" />
+    <Content Include="font-awesome\scss\_fixed-width.scss" />
+    <Content Include="font-awesome\scss\_icons.scss" />
+    <Content Include="font-awesome\scss\_larger.scss" />
+    <Content Include="font-awesome\scss\_list.scss" />
+    <Content Include="font-awesome\scss\_mixins.scss" />
+    <Content Include="font-awesome\scss\_path.scss" />
+    <Content Include="font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="font-awesome\scss\_spinning.scss" />
+    <Content Include="font-awesome\scss\_stacked.scss" />
+    <Content Include="font-awesome\scss\_variables.scss" />
+    <Content Include="Areas\HeThong\Views\web.config" />
+    <Content Include="Areas\HeThong\Views\Group\Index.cshtml" />
+    <Content Include="Areas\HeThong\Views\Group\Create.cshtml" />
+    <Content Include="Areas\HeThong\Views\Group\Edit.cshtml" />
+    <Content Include="Areas\HeThong\Views\Group\Details.cshtml" />
+    <Content Include="Areas\DanhMuc\Views\web.config" />
+    <Content Include="Content\bootstrap-select.css.map" />
+    <Content Include="Areas\DanhMuc\Views\NhanVien\Index.cshtml" />
+    <Content Include="Areas\DanhMuc\Views\NhanVien\Create.cshtml" />
+    <Content Include="Areas\DanhMuc\Views\NhanVien\Edit.cshtml" />
+    <Content Include="Areas\DanhMuc\Views\Shared\nvEditProfile.cshtml" />
+    <Content Include="Areas\DanhMuc\Views\Shared\nvEditGeneral.cshtml" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Areas\DanhMuc\Views\Shared\View.cshtml" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Views\Home\Denie.cshtml" />
+    <Content Include="Scripts\bootstrap-select.js.map" />
+    <Content Include="Scripts\jquery-2.0.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuanLyNhanSu.Commons\QuanLyNhanSu.Commons.csproj">
+      <Project>{e1e01fd1-131f-4ae1-b88e-0690feb89953}</Project>
+      <Name>QuanLyNhanSu.Commons</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Reports\Devs\Consolidation.resx">
+      <DependentUpon>Consolidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Devs\ItemSaleByDes.resx">
+      <DependentUpon>ItemSaleByDes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Devs\ItemSale.resx">
+      <DependentUpon>ItemSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Devs\ItemSaleByItem.resx">
+      <DependentUpon>ItemSaleByItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Devs\DiscountByCode.resx">
+      <DependentUpon>DiscountByCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Devs\ItemSaleByTender.resx">
+      <DependentUpon>ItemSaleByTender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Devs\LossPreventionDetail.resx">
+      <DependentUpon>LossPreventionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Devs\LossPrevention.resx">
+      <DependentUpon>LossPrevention.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Devs\Tender.resx">
+      <DependentUpon>Tender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Devs\WeeklyHourly.resx">
+      <DependentUpon>WeeklyHourly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Devs\WeelyHourlySale.resx">
+      <DependentUpon>WeelyHourlySale.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>@ViewBag.Title</title>
+   
+    <!-- Core CSS - Include with every page -->
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link href="/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Page-Level Plugin CSS - Dashboard -->
+    <link href="/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="/css/plugins/timeline/timeline.css" rel="stylesheet">
+    <link href="~/Content/fullcalendar.print.min.css" rel="stylesheet" />
+    <link href="~/Content/fullcalendar.min.css" rel="stylesheet" />
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <link href="~/css/CheckBox.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-select.css" rel="stylesheet" />
+    <link href="~/css/Customize.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="~/css/Fileuploads/fileinput.min.css" rel="stylesheet" />
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="~/css/Treeview.css" rel="stylesheet" />
+    <script src="~/js/Dialogue.js"></script>
+    <script src="~/js/Commons.js"></script>
+   
+</head>
+
+<body> 
+    <div class="modal windows8 "  id="divLoading" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="wBall" id="wBall_1">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_2">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_3">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_4">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_5">
+            <div class="wInnerBall"></div>
+        </div>
+    </div>
+    <div id="wrapper">
+        @Html.Action("Navbar", "Navbar",   new {id=1, controller = ViewContext.RouteData.Values["Controller"].ToString(), action = ViewContext.RouteData.Values["Action"].ToString() })
+
+        <div id="page-wrapper" style="margin-top:-20px;padding-top:10px;">           
+            @RenderBody()
+        </div>
+    </div>
+    <!-- Core Scripts - Include with every page -->
+
+    
+    <script src="/js/jquery-1.10.2.js"></script>
+    
+    <!--Export To Excell-->
+    <script src="~/Scripts/libs/js-xlsx/xlsx.core.min.js"></script>
+    <script src="~/Scripts/libs/FileSaver/FileSaver.min.js"></script>
+    <script src="~/Scripts/libs/jsPDF/jspdf.min.js"></script>
+    <script src="~/Scripts/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>
+    <script src="~/Scripts/libs/html2canvas/html2canvas.min.js"></script>
+    <script src="~/Scripts/tableExport.min.js"></script>
+
+
+    <script src="~/Scripts/moment.min.js"></script>
+    <script src="~/Scripts/fullcalendar/fullcalendar.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    
+    <!-- Page-Level Plugin Scripts - Dashboard -->
+    <script src="/js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="/js/plugins/morris/morris.js"></script>
+
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="/js/sb-admin.js"></script>
+
+    <!-- Page-Level Demo Scripts - Dashboard - Use for reference -->
+    <script src="/js/demo/dashboard-demo.js"></script>
+    <!-- /#wrapper -->
+    <script src="~/Scripts/bootstrap-select.min.js"></script>
+    <script src="~/Scripts/moment-with-locales.min.js"></script>
+    <script src="~/Scripts/moment.js"></script>
+    <script src="~/Scripts/bootstrap-datetimepicker.js"></script>
+    
+    <script src="~/js/fileinput.min.js"></script>
+    <script src="~/Scripts/jquery.dataTables.min.js"></script>
+    <script src="~/js/chart.js/Chart.js"></script>
+    <script src="~/js/canvasjs.min.js"></script>
+    <script type="text/javascript">
+        $("#submit").click(function () {
+            $("#divLoading").modal('show');
+        });
+    </script>
+    <script type="text/javascript">
+        
+        $(document).ready(function () {
+            var selectedmenu = "";
+            
+    });
+    var ExportFile = function (tableID, FileName) {
+        $('#' + tableID).tableExport({ type: 'excel', fileName: FileName, excelstyles: ['border-bottom', 'border-top', 'border-left', 'border-right'] });
+    };
+    </script>
+    @RenderSection("scripts", required: false)
+    
+</body>
+</html>
+

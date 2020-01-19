@@ -1,0 +1,71 @@
+﻿@model QuanLyNhanSu.Web.Models.NhanVienModel
+@using QuanLyNhanSu.Web.Models;
+
+@{
+    ViewBag.Title = "Employee info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+<hr />
+<div class="col-lg-12">
+    <div class="tab-pane active" id="general">@Html.Partial("nvEditGeneral")</div>
+    <div class="clearfix"></div>
+</div>
+
+<script src="/js/jquery-1.10.2.js"></script>
+<script>
+    $(function () {
+        //for bootstrap 3 use 'shown.bs.tab' instead of 'shown' in the next line
+        $('a[data-toggle="tab"]').on('click', function (e) {
+            //save the latest tab; use cookies if you like 'em better:
+            localStorage.setItem('lastTab', $(e.target).attr('href'));
+        });
+
+        //go to the latest tab, if it exists:
+        var lastTab = localStorage.getItem('lastTab');
+
+        if (lastTab) {
+            $('a[href="' + lastTab + '"]').click();
+
+        }
+    });
+    var Change = function (s, functionID) {
+        var chk = $(s).closest('tr').find('input:checkbox');
+        var current = chk[0];
+        var checked = current.checked;
+        var username = $("#MANV").val();
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("UpdatePermission", "NhanVien")?BranchCode=' + functionID + '&UserName=' + username + '&value=' + !checked,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+                var checkboxs = $("#" + functionID).closest("tr").find("table").find("input:checkbox");
+                for (var i = 0; i < checkboxs.length; i++) {
+                    checkboxs[i].checked = !checked;
+                }
+            },
+            error: function () {
+                alert("Bạn không được quyền phân nhóm bạn không sở hữu");
+            }
+        });
+    };
+    var ChangeStore = function (s, functionID) {
+        var chk = $(s).closest('tr').find('input:checkbox');
+        var current = chk[0];
+        var checked = current.checked;
+        var username = $("#MANV").val();
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("UpdateStorePermission", "NhanVien")?storecode=' + functionID + '&UserName=' + username + '&value=' + !checked,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+            },
+            error: function () {
+                alert("Bạn không được quyền phân nhóm bạn không sở hữu");
+            }
+        });
+    };
+</script>

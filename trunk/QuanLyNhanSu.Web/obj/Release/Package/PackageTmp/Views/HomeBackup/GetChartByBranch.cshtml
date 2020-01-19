@@ -1,0 +1,129 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model QuanLyNhanSu.Web.Models.DashboadModel
+@using QuanLyNhanSu.Web.Models;
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                @ViewBag.Title <small></small>
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-bar-chart-o fa-fw"></i>Branchs
+                    <div class="pull-right">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                Options
+                                <span class="caret"></span>
+                            </button>
+                            <div class="dropdown-menu pull-right">
+                                <li>
+                                    <a href="#" onclick="ShowTimePicker(1);">Sort by date</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="ShowTimePicker(2);">In this month</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="ShowTimePicker(3);">In this year</a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body" id="chartPanel">
+                    <div id="myBarChart" style="width:100%; height:500px"></div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    @Html.HiddenFor(model => model.ToDate)
+    @Html.HiddenFor(model=>model.FromDate)
+    @Html.HiddenFor(model => model.BranchID)
+    @Html.HiddenFor(model => model.selectType)
+    @Html.HiddenFor(model => model.chartType)
+</div>
+<div class="modal fade" id="divSelectTime" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">Select date</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="form-group">
+                        @Html.MyLabelFor(model => model.FromDate, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-4">
+                            @Html.EditorFor(model => model.FromDate, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.FromDate, "", new { @class = "text-danger" })
+                        </div>
+                        @Html.MyLabelFor(model => model.ToDate, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-4">
+                            @Html.EditorFor(model => model.ToDate, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.ToDate, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" onclick="UpdateChart();">@QuanLyNhanSu.Commons.ControlText.Search</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    var SelectType = 1;
+    var ShowTimePicker = function (s) {
+        SelectType = s;
+        $("#divSelectTime").modal('show');
+    };
+    var UpdateChart = function () {
+        var fromdate = $("#ToDate").val();
+        var branchID = $("#BranchID").val();
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("GetChartByBranch", "Home")?fromdate=' + fromdate + '&branchID=' + branchID + '&selectType=' + SelectType,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            beforeSend: function () {
+                $("#divLoading").modal('show');
+            },
+            success: function (data) {
+                var chart = new CanvasJS.Chart("myBarChart", {
+                    title: {
+                        text: "Store chart"
+                    },
+                    axisY: {
+                        valueFormatString: "#,###.###", 
+                    },
+                    data: data.data
+                });
+                chart.render();
+                $("#divLoading").modal('hide');
+            },
+            error: function () {
+                alert("Bạn không được quyền phân nhóm bạn không sở hữu");
+            }
+        });
+        $("#divSelectTime").modal('hide');
+    }
+    $(document).ready(function () {
+        Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+        Chart.defaults.global.defaultFontColor = '#292b2c';
+        $('#FromDate').datetimepicker({ format: 'MM/DD/YYYY', locale: 'en' });
+        $('#ToDate').datetimepicker({ format: 'MM/DD/YYYY', locale: 'en' });
+        UpdateChart();
+    });
+
+</script>
+<style type="text/css">
+
+</style>

@@ -1,0 +1,65 @@
+D:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Dao.dll
+D:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Dao.pdb
+D:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Commons.dll
+D:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.dll
+D:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Commons.pdb
+D:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.pdb
+D:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.csprojResolveAssemblyReference.cache
+D:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.dll
+D:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.pdb
+E:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Dao.dll
+E:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Dao.pdb
+E:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Commons.dll
+E:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.dll
+E:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Commons.pdb
+E:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.pdb
+E:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.csprojResolveAssemblyReference.cache
+E:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.dll
+E:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.pdb
+D:\Company\hrmanager\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Dao.dll
+D:\Company\hrmanager\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Dao.pdb
+D:\Company\hrmanager\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Commons.dll
+D:\Company\hrmanager\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.dll
+D:\Company\hrmanager\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Commons.pdb
+D:\Company\hrmanager\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.pdb
+D:\Company\hrmanager\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.csprojResolveAssemblyReference.cache
+D:\Company\hrmanager\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.dll
+D:\Company\hrmanager\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.pdb
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Dao.dll
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Dao.pdb
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Commons.dll
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.dll
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Commons.pdb
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.pdb
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.csprojResolveAssemblyReference.cache
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.dll
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Dao.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Dao.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Commons.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Commons.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.csprojResolveAssemblyReference.cache
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Dao.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Dao.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Commons.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Commons.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.csprojResolveAssemblyReference.cache
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Dao.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Dao.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Commons.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Commons.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\bin\Debug\QuanLyNhanSu.Models.dll.config
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.csprojAssemblyReference.cache
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.csproj.CopyComplete
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\obj\Debug\QuanLyNhanSu.Dao.pdb

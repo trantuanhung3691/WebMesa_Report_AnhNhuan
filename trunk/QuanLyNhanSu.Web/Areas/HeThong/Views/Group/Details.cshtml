@@ -1,0 +1,248 @@
+﻿@model QuanLyNhanSu.Web.Areas.HeThong.Models.GroupDetailModel
+
+@{
+    ViewBag.Title = "Edit Group Permission";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <table class="table" id="table">
+        <tr>
+            <th>
+                Group Name
+            </th>
+            <th>
+                <span>View</span>
+                <div class="check_box">
+                    <input type="checkbox" name="checkbox1" id="1All" class="ios8-switch" />
+                    <label for="1All" class="checkbox-label" data-off="off" data-on="on" onclick="ChangeAll(this,@Model.GroupID,1);"></label>
+
+                </div>
+            </th>
+            <th>
+                <span>Insert</span>
+                <div class="check_box">
+                    <input type="checkbox" name="checkbox1" id="2All" class="ios8-switch" />
+                    <label for="2All" class="checkbox-label" data-off="off" data-on="on" onclick="ChangeAll(this,@Model.GroupID,2);"></label>
+
+                </div>
+            </th>
+            <th>
+                <span>Delete</span>
+                <div class="check_box">
+                    <input type="checkbox" name="checkbox1" id="3All" class="ios8-switch" />
+                    <label for="3All" class="checkbox-label" data-off="off" data-on="on" onclick="ChangeAll(this,@Model.GroupID,3);"></label>
+
+                </div>
+            </th>
+            <th>
+                <span>Update</span>
+                <div class="check_box">
+                    <input type="checkbox" name="checkbox1" id="4All" class="ios8-switch" />
+                    <label for="4All" class="checkbox-label" data-off="off" data-on="on" onclick="ChangeAll(this,@Model.GroupID,4);"></label>
+
+                </div>
+            </th>
+            <th>
+                All
+            </th>
+        </tr>
+        @{
+            var listParent = Model.ListFunction.Where(p => p.Parent == 0).ToList();
+            var countParent = listParent.Count();
+            for (int i = 0; i < countParent; i++)
+            {
+                var function = listParent[i];
+
+                <tr>
+                    <td style="font-weight:bold;">
+                        @Html.DisplayFor(modelItem => function.Name)
+                    </td>
+
+                    <td>
+                        <div class="check_box">
+                            <input type="checkbox" name="checkbox1" id="@function.ItemID-1" class="ios8-switch" @Html.Raw(function._view ? "checked" : "") />
+                            <label for="@function.ItemID-1" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function.ItemID',1);"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="check_box">
+                            <input type="checkbox" name="checkbox1" id="@function.ItemID-2" class="ios8-switch" @Html.Raw(function._insert ? "checked" : "") />
+                            <label for="@function.ItemID-2" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function.ItemID',2);"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="check_box">
+                            <input type="checkbox" name="checkbox1" id="@function.ItemID-3" class="ios8-switch" @Html.Raw(function._delete ? "checked" : "") />
+                            <label for="@function.ItemID-3" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function.ItemID',3);"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="check_box">
+                            <input type="checkbox" name="checkbox1" id="@function.ItemID-4" class="ios8-switch" @Html.Raw(function._update ? "checked" : "") />
+
+                            <label for="@function.ItemID-4" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function.ItemID',4);"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="check_box">
+                            <input type="checkbox" name="checkbox1" id="@function.ItemID-5" class="ios8-switch" @Html.Raw(function._selectAll ? "checked" : "") />
+                            <label for="@function.ItemID-5" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function.ItemID',5);"></label>
+                        </div>
+                    </td>
+                </tr>
+
+                var ListChild = Model.ListFunction.Where(p => p.Parent.Equals(function.Id)).ToList();
+                if (ListChild.Count > 0)
+                {
+                    var max = ListChild.Count;
+                    for (int j = 0; j < max; j++)
+                    {
+                        var function2 = ListChild[j];
+                        <tr>
+                            <td style="padding-left:30px;">
+                                <span class="fa fa-arrow-right"></span> @Html.DisplayFor(modelItem => function2.Name)
+                            </td>
+
+                            <td>
+                                <div class="check_box">
+                                    <input type="checkbox" name="checkbox1" id="@function2.ItemID-1" class="ios8-switch" @Html.Raw(function2._view ? "checked" : "") />
+                                    <label for="@function2.ItemID-1" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function2.ItemID',1);"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="check_box">
+                                    <input type="checkbox" name="checkbox1" id="@function2.ItemID-2" class="ios8-switch" @Html.Raw(function2._insert ? "checked" : "") />
+                                    <label for="@function2.ItemID-2" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function2.ItemID',2);"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="check_box">
+                                    <input type="checkbox" name="checkbox1" id="@function2.ItemID-3" class="ios8-switch" @Html.Raw(function2._delete ? "checked" : "") />
+                                    <label for="@function2.ItemID-3" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function2.ItemID',3);"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="check_box">
+                                    <input type="checkbox" name="checkbox1" id="@function2.ItemID-4" class="ios8-switch" @Html.Raw(function2._update ? "checked" : "") />
+
+                                    <label for="@function2.ItemID-4" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function2.ItemID',4);"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="check_box">
+                                    <input type="checkbox" name="checkbox1" id="@function2.ItemID-5" class="ios8-switch" @Html.Raw(function2._selectAll ? "checked" : "") />
+                                    <label for="@function2.ItemID-5" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function2.ItemID',5);"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        var listChild3 = Model.ListFunction.Where(p => p.Parent.Equals(function2.Id)).OrderBy(p => p.Order).ToList();
+                        if (listChild3.Count > 0)
+                        {
+                            var count3 = listChild3.Count;
+                            for (int t = 0; t < count3; t++)
+                            {
+                                var function3 = listChild3[t];
+                                <tr>
+                                    <td style="padding-left:60px;">
+                                       <span class="fa fa-arrow-right"></span> @Html.DisplayFor(modelItem => function3.Name)
+                                    </td>
+
+                                    <td>
+                                        <div class="check_box">
+                                            <input type="checkbox" name="checkbox1" id="@function3.ItemID-1" class="ios8-switch" @Html.Raw(function3._view ? "checked" : "") />
+                                            <label for="@function3.ItemID-1" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function3.ItemID',1);"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="check_box">
+                                            <input type="checkbox" name="checkbox1" id="@function3.ItemID-2" class="ios8-switch" @Html.Raw(function3._insert ? "checked" : "") />
+                                            <label for="@function3.ItemID-2" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function3.ItemID',2);"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="check_box">
+                                            <input type="checkbox" name="checkbox1" id="@function3.ItemID-3" class="ios8-switch" @Html.Raw(function3._delete ? "checked" : "") />
+                                            <label for="@function3.ItemID-3" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function3.ItemID',3);"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="check_box">
+                                            <input type="checkbox" name="checkbox1" id="@function3.ItemID-4" class="ios8-switch" @Html.Raw(function3._update ? "checked" : "") />
+
+                                            <label for="@function3.ItemID-4" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function3.ItemID',4);"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="check_box">
+                                            <input type="checkbox" name="checkbox1" id="@function3.ItemID-5" class="ios8-switch" @Html.Raw(function3._selectAll ? "checked" : "") />
+                                            <label for="@function3.ItemID-5" class="checkbox-label" data-off="off" data-on="on" onclick="Change(this,'@function3.ItemID',5);"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+    </table>
+            }
+<script src="/js/jquery-1.10.2.js"></script>
+@*<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>*@
+<script type="text/javascript">
+    var Change=function(s,functionID,perID){
+        var chk = $(s).closest('tr').find('input:checkbox');
+        var current = chk[perID - 1];
+        var checked = current.checked;
+        if (perID == 5) {
+            for(var i=0;i<4;i++){
+                chk[i].checked = !checked;
+            }
+        }
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("UpdatePermission", "Group")?GroupID='+functionID+'&Per='+perID+'&value='+!checked,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+            },
+            error: function () {
+                alert("Bạn không được quyền phân nhóm bạn không sở hữu");
+            }
+        });
+
+    };
+    var ChangeAll = function (s, functionID, index) {
+        var chk = $(s).closest('tr').find('input:checkbox');
+        var current = chk[index - 1];
+        var checked = current.checked;
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("UpdatePermissionAll", "Group")?GroupID=' + functionID + '&Per=' + index + '&value=' + !checked,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+            },
+            error: function () {
+                alert("Bạn không được quyền phân nhóm bạn không sở hữu");
+            }
+        });
+        var table=$(s).closest('tr').closest('table');
+        $('#table tr').each(function (i, row) {
+            if(i!=0)
+            {
+                var checkboxs=$(row.closest('tr')).find('input:checkbox');
+                checkboxs[index - 1].checked = !checked;
+            }
+        });
+    };
+</script>

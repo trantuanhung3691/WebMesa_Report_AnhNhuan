@@ -1,0 +1,15 @@
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\bin\Debug\QuanLyNhanSu.Helper.exe.config
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\bin\Debug\QuanLyNhanSu.Helper.exe
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\bin\Debug\QuanLyNhanSu.Helper.pdb
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\bin\Debug\QuanLyNhanSu.Commons.dll
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\bin\Debug\QuanLyNhanSu.Dao.dll
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\bin\Debug\QuanLyNhanSu.Models.dll
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\bin\Debug\QuanLyNhanSu.Commons.pdb
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\bin\Debug\QuanLyNhanSu.Dao.pdb
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\bin\Debug\QuanLyNhanSu.Models.pdb
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\obj\Debug\QuanLyNhanSu.Helper.csprojResolveAssemblyReference.cache
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\obj\Debug\QuanLyNhanSu.Helper.Form1.resources
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\obj\Debug\QuanLyNhanSu.Helper.Properties.Resources.resources
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\obj\Debug\QuanLyNhanSu.Helper.csproj.GenerateResource.Cache
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\obj\Debug\QuanLyNhanSu.Helper.exe
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Helper\obj\Debug\QuanLyNhanSu.Helper.pdb

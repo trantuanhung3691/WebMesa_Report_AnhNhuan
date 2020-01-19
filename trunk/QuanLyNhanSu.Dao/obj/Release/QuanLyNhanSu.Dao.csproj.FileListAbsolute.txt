@@ -1,0 +1,29 @@
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Dao.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Dao.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Commons.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Models.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Commons.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Models.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\obj\Release\QuanLyNhanSu.Dao.csprojResolveAssemblyReference.cache
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\obj\Release\QuanLyNhanSu.Dao.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\obj\Release\QuanLyNhanSu.Dao.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Dao.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Dao.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Commons.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Models.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Commons.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Models.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\obj\Release\QuanLyNhanSu.Dao.csprojResolveAssemblyReference.cache
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\obj\Release\QuanLyNhanSu.Dao.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Dao\obj\Release\QuanLyNhanSu.Dao.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Dao.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Dao.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Commons.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Models.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Commons.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Models.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\bin\Release\QuanLyNhanSu.Models.dll.config
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\obj\Release\QuanLyNhanSu.Dao.csprojAssemblyReference.cache
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\obj\Release\QuanLyNhanSu.Dao.csproj.CopyComplete
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\obj\Release\QuanLyNhanSu.Dao.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Dao\obj\Release\QuanLyNhanSu.Dao.pdb

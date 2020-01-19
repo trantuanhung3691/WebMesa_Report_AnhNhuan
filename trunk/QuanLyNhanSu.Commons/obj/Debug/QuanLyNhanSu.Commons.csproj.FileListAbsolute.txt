@@ -1,0 +1,30 @@
+D:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Commons\bin\Debug\QuanLyNhanSu.Commons.dll
+D:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Commons\bin\Debug\QuanLyNhanSu.Commons.pdb
+D:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.csprojResolveAssemblyReference.cache
+D:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.dll
+D:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.pdb
+E:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Commons\bin\Debug\QuanLyNhanSu.Commons.dll
+E:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Commons\bin\Debug\QuanLyNhanSu.Commons.pdb
+E:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.csprojResolveAssemblyReference.cache
+E:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.dll
+E:\Data\Myfiles\Sourcecodes\QuanLyNhanSu\QuanLyNhanSu\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.pdb
+D:\Company\hrmanager\QuanLyNhanSu.Commons\bin\Debug\QuanLyNhanSu.Commons.dll
+D:\Company\hrmanager\QuanLyNhanSu.Commons\bin\Debug\QuanLyNhanSu.Commons.pdb
+D:\Company\hrmanager\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.csprojResolveAssemblyReference.cache
+D:\Company\hrmanager\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.dll
+D:\Company\hrmanager\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\bin\Debug\QuanLyNhanSu.Commons.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\bin\Debug\QuanLyNhanSu.Commons.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.csprojResolveAssemblyReference.cache
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\bin\Debug\QuanLyNhanSu.Commons.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\bin\Debug\QuanLyNhanSu.Commons.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.csprojResolveAssemblyReference.cache
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Commons\bin\Debug\QuanLyNhanSu.Commons.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Commons\bin\Debug\QuanLyNhanSu.Commons.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Commons\obj\Debug\QuanLyNhanSu.Commons.csprojAssemblyReference.cache

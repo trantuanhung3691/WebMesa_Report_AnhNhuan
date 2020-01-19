@@ -1,0 +1,73 @@
+﻿@model IEnumerable<QuanLyNhanSu.Models.VA_W_PHONGBAN>
+@using QuanLyNhanSu.Web.Models;
+@{
+    ViewBag.Title = "Phòng ban";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using QuanLyNhanSu.Commons;
+
+<div class="panel-heading header-title">
+    @ViewBag.Title
+    <div class="pull-right">
+        @using (Html.BeginForm())
+        {
+            <div class="input-group search-box">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Create", "PhongBan")'">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    </button>
+                </span>
+                <input type="text" class="form-control" name="@QuanLyNhanSu.Commons.ControlText.KeyWordID" id="@QuanLyNhanSu.Commons.ControlText.KeyWordID" placeholder="@QuanLyNhanSu.Commons.ControlText.PlaceHolderSearch">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button class="btn btn-default" type="button" title="Xuất Excel" onclick="ExportFile('mytable', 'DanhSachPhongBan');">
+                        <span class="glyphicon glyphicon-export"></span>
+                    </button>
+                </span>
+            </div>
+        }
+    </div>
+</div>
+<table class="table" id="mytable">
+    <tr>
+        <th>
+            @Html.MyDisplayNameFor(model => model.TENPB)
+        </th>
+        
+        <th>
+            @Html.MyDisplayNameFor(model => model.DIENTHOAI)
+        </th>
+        <th>
+            @Html.MyDisplayNameFor(model => model.DIENTHOAINB)
+        </th>
+        <th>
+            @Html.MyDisplayNameFor(model => model.THUTU)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TENPB)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.DIENTHOAI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DIENTHOAINB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.THUTU)
+        </td>
+        <td>
+            @Html.ActionLink(ControlText.Edit, "Edit", new { id=item.MAPB }) |
+            @Html.ActionLink(ControlText.Delete, "Delete", new { id=item.MAPB })
+        </td>
+    </tr>
+}
+
+</table>

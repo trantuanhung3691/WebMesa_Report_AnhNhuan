@@ -1,0 +1,77 @@
+﻿@using QuanLyNhanSu.Models;
+<div class="panel panel-default">
+    <div class="pull-right">
+
+        @using (Html.BeginForm())
+            {
+            <div class="input-group search-box">
+                
+                <input type="text" class="form-control" name="CongvanKeyWord" id="CongvanKeyWord" placeholder="@QuanLyNhanSu.Commons.ControlText.PlaceHolderSearch">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button class="btn btn-default" type="button" title="Xuất Excel" onclick="ExportFile('mytable', 'DanhSachCongVanDen');">
+                        <span class="glyphicon glyphicon-export"></span>
+                    </button>
+                </span>
+            </div>
+        }
+    </div>
+
+    <div class="panel-heading">
+        
+        <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Các công văn mới</h3>
+        
+    </div>
+    <div class="panel-body">
+<table class="table" id="mytable">
+    <tr>
+        <th>
+            Số công văn
+        </th>
+        <th>
+            Trích yếu
+        </th>
+        <th>
+            Ngày nhập
+        </th>
+        
+        <th>
+            Số lưu
+        </th>
+        <th>
+            Ngày gửi
+        </th>
+    </tr>
+    @if (ViewBag.ListCongVanDuocXem != null)
+    {
+        var list = ViewBag.ListCongVanDuocXem as List<CONGVAN>;
+        foreach (var item in list)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SOCONGVAN)
+                </td>
+                <td>
+                    @Html.ActionLink(" " + item.TENCONGVAN, "CongVanDen/viewCongVan","CongVan", new { id = item.ID }, new { @class = "glyphicon glyphicon-eye-open" })
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NGAYNHAP)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SOLUU)
+                </td>
+                <td>
+                    @Html.Raw(item.NGAYGUI.HasValue ? item.NGAYGUI.Value.ToString("dd/MM/yyyy") : "")
+                </td>
+            </tr>
+        }
+    } </table>
+        
+        
+        <div class="text-right">
+            <a href="#">Dowaco <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+</div>

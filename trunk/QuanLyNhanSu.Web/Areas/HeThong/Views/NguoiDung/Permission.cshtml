@@ -1,0 +1,85 @@
+﻿@model IEnumerable<QuanLyNhanSu.Web.Models.GroupModel>
+@using QuanLyNhanSu.Web.Models;  
+@using QuanLyNhanSu.Web.Utilities;
+@{
+    ViewBag.Title = "Add user into group permission";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="panel-heading header-title">
+    @ViewBag.Title
+    <div class="pull-right">
+        @using (Html.BeginForm())
+        {
+            <div class="input-group search-box">
+                <input type="text" class="form-control" name="@QuanLyNhanSu.Commons.ControlText.KeyWordID" id="@QuanLyNhanSu.Commons.ControlText.KeyWordID" placeholder="@QuanLyNhanSu.Commons.ControlText.PlaceHolderSearch">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+        }
+    </div>
+</div>
+<table class="table" id="tbNguoiDung">
+    <tr role="row">
+        <th>
+            On/Off
+        </th>
+        <th>
+            @Html.MyDisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.MyDisplayNameFor(model => model.CreateBy)
+        </th>
+        <th>
+            @Html.MyDisplayNameFor(model => model.CreateDate)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr role="row">
+            <td>
+
+                <div class="check_box">
+                    <input type="checkbox" name="checkbox1" id="@item.Id" class="ios8-switch" @Html.Raw(QuanLyNhanSu.Web.Utilities.Utilities.HasPermission(ViewBag.UserID, item.Id) ? "checked" : "") />
+                    <label for="@item.Id" class="checkbox-label" data-off="off" data-on="on" onclick="ChangeActivePermission(this,@item.Id,@ViewBag.UserID);"></label>
+                </div>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateDate)
+            </td>
+            
+        </tr>
+    }
+</table>
+<script src="/js/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    var ChangeActivePermission = function (s, functionID,userID) {
+        var chk = $(s).closest('tr').find('input:checkbox');
+        var current = chk[0];
+        var checked = current.checked;
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("ChangeStatusPermission", "NguoiDung")?usid='+userID+'&groupid=' + functionID + '&value=' + !checked,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+
+            },
+            error: function () {
+                alert("Bạn không được quyền phân nhóm bạn không sở hữu");
+            }
+        });
+
+    };
+            
+</script>

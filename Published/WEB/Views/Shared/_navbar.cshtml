@@ -1,0 +1,136 @@
+﻿@using QuanLyNhanSu.Web.Utilities;
+@model IEnumerable<QuanLyNhanSu.Web.Models.Navbar>
+<style>
+    .form-css {
+        display: block;
+        padding: 15px;
+        position: relative;
+    }
+    
+</style>
+<script type="text/javascript">
+    var ShowMenu = function (s, e) {
+        selectedmenu = s.id;
+    };
+</script>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom:0px;padding-bottom:0px;">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="~/Home">APPLICATION</a>
+        
+            @*@{
+                var branchs = Session[QuanLyNhanSu.Commons.SessionKeys.BranchList] as List<QuanLyNhanSu.Web.Models.BranchUserModel>;
+                if (branchs != null)
+                {
+                    foreach (var item in branchs)
+                    {
+                        <img src="@item.BRANCHLOGO" />
+                    }
+                }
+            }*@
+        <ul class="nav navbar-top-links navbar-right pull-right">
+            @if (Request.IsAuthenticated)
+            {
+                <li class="dropdown">
+                    @using (Html.BeginForm("LogOff", "Account", new { area = "" }, FormMethod.Post, new { id = "logoutForm", @class = "form-css" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> @User.Identity.Name <b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="~/DanhMuc/NhanVien/Edit/@User.Identity.Name"><i class="fa fa-user fa-fw"></i>My info</a>
+                            </li>
+                            <li>
+                                <a href="~/HeThong/NguoiDung/ChangePassword"><i class="fa fa-gear fa-fw"></i> @QuanLyNhanSu.Commons.ControlText.Changepass</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:document.getElementById('logoutForm').submit()"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
+                    }
+                </li>
+            }
+            else
+            {
+                <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+            }
+        </ul>
+        </div>
+    <!-- Top Menu Items -->
+    
+    <div class="navbar-default navbar-static-side">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+                @foreach (var item in Model)
+            {
+                    <li>
+                        <a href="@Url.Action( item.Action, item.Controler)"><i class="@item.Icon"></i> @item.Name<span class="fa arrow"></span></a>
+                        @{
+                            var mnDao = new QuanLyNhanSu.Web.ServiceDao.MenuDao();
+                            var listChild = mnDao.GetMenuBar(User.Identity.Name, item.Id).ToList();
+                            if (listChild.Count() != 0)
+                            {
+                                <ul class="nav nav-second-level @Html.IsActiveUl(item.Controler,item.Id.ToString())">
+                                    @{
+                                        foreach (var child in listChild)
+                                        {
+                                            <li>
+                                                @{
+                                                    var listChildChild = mnDao.GetMenuBar(User.Identity.Name, child.Id).ToList();
+                                                    <a id="@child.Id" href="@child.Controler/@child.Action?id=@child.Id"><i class="@child.Icon"></i> @child.Name@Html.Raw(listChildChild.Count()>0?"<span class='fa arrow'></span>":"")</a>
+
+                                                    if (listChildChild.Count() != 0)
+                                                    {
+
+                                                            <ul class="nav nav-third-level @Html.IsActiveSubUl(Request.RawUrl,child.Id.ToString())">
+                                                            @{
+                                                                foreach (var child2 in listChildChild)
+                                                                {
+                                                                    <li>
+                                                                        <a href="@child2.Controler/@child2.Action?id=@child2.Id"><i class="@child2.Icon"></i> @child2.Name</a>
+                                                                    </li>
+                                                                }
+                                                            }
+                                                        </ul>
+                                                                }
+                                                }
+                                            </li>
+                                                                }
+                                    }
+                                </ul>
+                                                                }
+                        }
+
+                    </li>
+                                                                }
+            </ul>
+        </div>
+        <div class="logo">
+            @*@{
+                var branchs = Session[QuanLyNhanSu.Commons.SessionKeys.BranchList] as List<QuanLyNhanSu.Web.Models.BranchUserModel>;
+                if (branchs != null)
+                {
+                    foreach (var item in branchs)
+                    {
+                        <img src="@item.BRANCHLOGO"/>
+                    }
+                }
+            }*@
+        </div>
+    </div>
+</nav>
+<style type="text/css">
+    .logo{
+        /*position:fixed;
+        bottom:0px;*/
+        padding:5px;
+    }
+</style>

@@ -1,0 +1,345 @@
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\QuanLyNhanSu.Web.dll.config
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\QuanLyNhanSu.Web.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\QuanLyNhanSu.Web.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Antlr3.Runtime.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Security.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Newtonsoft.Json.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Owin.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\QuanLyNhanSu.Commons.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\System.Web.Helpers.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\System.Web.Mvc.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\System.Web.Optimization.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\System.Web.Razor.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\System.Web.WebPages.Deployment.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\System.Web.WebPages.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\System.Web.WebPages.Razor.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Web.Optimization.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\WebGrease.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\QuanLyNhanSu.Commons.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Security.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\System.Web.Helpers.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\System.Web.Mvc.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\System.Web.Optimization.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\System.Web.Razor.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\System.Web.WebPages.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\System.Web.WebPages.Deployment.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\System.Web.WebPages.Razor.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Antlr3.Runtime.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Newtonsoft.Json.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.csprojResolveAssemblyReference.cache
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\SqlServerTypes\x64\msvcr100.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\SqlServerTypes\x64\SqlServerSpatial110.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\SqlServerTypes\x86\msvcr100.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\SqlServerTypes\x86\SqlServerSpatial110.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Reports\LossPrevention.rdlc
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Reports\ItemSale.rdlc
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Reports\WeeklyHourly.rdlc
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Reports\Tender.rdlc
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.ReportViewer.Common.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\RestSharp.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Microsoft.SqlServer.Types.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Reports\WeeklyHourlySale.rdlc
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Reports\Consolidation.rdlc
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\Reports\DiscountByCode.rdlc
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Charts.v16.1.Core.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Data.v16.1.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.DataAccess.v16.1.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Office.v16.1.Core.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Pdf.v16.1.Core.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.PivotGrid.v16.1.Core.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Printing.v16.1.Core.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.RichEdit.v16.1.Core.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Sparkline.v16.1.Core.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Web.ASPxThemes.v16.1.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Web.Resources.v16.1.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Web.v16.1.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Xpo.v16.1.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraCharts.v16.1.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraGauges.v16.1.Core.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraReports.v16.1.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraReports.v16.1.Web.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.CodeParser.v16.1.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Pdf.v16.1.Drawing.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Data.v16.1.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.DataAccess.v16.1.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Office.v16.1.Core.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Pdf.v16.1.Core.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.PivotGrid.v16.1.Core.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Printing.v16.1.Core.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.RichEdit.v16.1.Core.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Sparkline.v16.1.Core.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraCharts.v16.1.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraGauges.v16.1.Core.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraReports.v16.1.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraReports.v16.1.Web.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Pdf.v16.1.Drawing.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Data.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Data.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Data.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Data.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.DataAccess.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.DataAccess.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.DataAccess.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.DataAccess.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.PivotGrid.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.PivotGrid.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.PivotGrid.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.PivotGrid.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Sparkline.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Sparkline.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Sparkline.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Sparkline.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Web.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Web.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Web.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Web.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Xpo.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Xpo.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Xpo.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Xpo.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.XtraCharts.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.XtraCharts.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.XtraCharts.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.XtraCharts.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.XtraGauges.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.XtraGauges.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.XtraGauges.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.XtraGauges.v16.1.Core.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.XtraReports.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.XtraReports.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.XtraReports.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.XtraReports.v16.1.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.XtraReports.v16.1.Web.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.XtraReports.v16.1.Web.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.XtraReports.v16.1.Web.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.XtraReports.v16.1.Web.resources.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.Consolidation.resources
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.Tender.resources
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.csproj.GenerateResource.Cache
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.dll.licenses
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.ItemSaleByItem.resources
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.DiscountByCode.resources
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.LossPrevention.resources
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.ItemSale.resources
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.ItemSaleByTender.resources
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.WeeklyHourly.resources
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.WeelyHourlySale.resources
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Web.v16.1.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\bin\DevExpress.Xpo.v16.1.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.ItemSaleByDes.resources
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\SqlServerTypes\x64\msvcr100.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\SqlServerTypes\x64\SqlServerSpatial110.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\SqlServerTypes\x86\msvcr100.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\SqlServerTypes\x86\SqlServerSpatial110.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\QuanLyNhanSu.Web.dll.config
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\QuanLyNhanSu.Web.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\QuanLyNhanSu.Web.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Antlr3.Runtime.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.AspNet.Identity.Core.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Security.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Security.OAuth.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.ReportViewer.Common.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.ReportViewer.WebForms.DLL
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Newtonsoft.Json.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Owin.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\QuanLyNhanSu.Commons.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\RestSharp.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\System.Web.Helpers.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\System.Web.Mvc.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\System.Web.Optimization.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\System.Web.Razor.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\System.Web.WebPages.Deployment.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\System.Web.WebPages.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\System.Web.WebPages.Razor.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Web.Optimization.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\WebGrease.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.SqlServer.Types.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\QuanLyNhanSu.Commons.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.AspNet.Identity.Core.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Security.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Microsoft.Owin.Security.OAuth.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\System.Web.Helpers.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\System.Web.Mvc.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\System.Web.Optimization.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\System.Web.Razor.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\System.Web.WebPages.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\System.Web.WebPages.Deployment.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\System.Web.WebPages.Razor.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Antlr3.Runtime.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\Newtonsoft.Json.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\Microsoft.SqlServer.Types.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\Microsoft.SqlServer.Types.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\fr\Microsoft.SqlServer.Types.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\it\Microsoft.SqlServer.Types.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\Microsoft.SqlServer.Types.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ko\Microsoft.SqlServer.Types.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\pt\Microsoft.SqlServer.Types.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\Microsoft.SqlServer.Types.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.csprojAssemblyReference.cache
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.Consolidation.resources
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.ItemSaleByDes.resources
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.ItemSale.resources
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.ItemSaleByItem.resources
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.DiscountByCode.resources
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.ItemSaleByTender.resources
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.LossPreventionDetail.resources
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.LossPrevention.resources
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.Tender.resources
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.WeeklyHourly.resources
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.Reports.Devs.WeelyHourlySale.resources
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.csproj.GenerateResource.cache
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.dll.licenses
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.csproj.CopyComplete
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\obj\Release\QuanLyNhanSu.Web.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Charts.v19.2.Core.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.CodeParser.v19.2.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Data.v19.2.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.DataAccess.v19.2.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Office.v19.2.Core.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Pdf.v19.2.Core.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.PivotGrid.v19.2.Core.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Printing.v19.2.Core.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.RichEdit.v19.2.Core.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.RichEdit.v19.2.Export.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Sparkline.v19.2.Core.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Web.ASPxThemes.v19.2.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Web.Resources.v19.2.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Web.v19.2.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Xpo.v19.2.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraCharts.v19.2.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraGauges.v19.2.Core.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraReports.v19.2.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraReports.v19.2.Web.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraReports.v19.2.Web.WebForms.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Images.v19.2.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Data.v19.2.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.DataAccess.v19.2.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Office.v19.2.Core.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Pdf.v19.2.Core.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.PivotGrid.v19.2.Core.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Printing.v19.2.Core.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.RichEdit.v19.2.Core.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Sparkline.v19.2.Core.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Web.v19.2.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.Xpo.v19.2.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraCharts.v19.2.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraGauges.v19.2.Core.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraReports.v19.2.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraReports.v19.2.Web.WebForms.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\DevExpress.XtraReports.v19.2.Web.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Data.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Data.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Data.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Data.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.DataAccess.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.DataAccess.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.DataAccess.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.DataAccess.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Office.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Office.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Office.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Office.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Pdf.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Pdf.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Pdf.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Pdf.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.PivotGrid.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.PivotGrid.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.PivotGrid.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.PivotGrid.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Printing.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Printing.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Printing.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Printing.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.RichEdit.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.RichEdit.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.RichEdit.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.RichEdit.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Sparkline.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Sparkline.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Sparkline.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Sparkline.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Web.Resources.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Web.Resources.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Web.Resources.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Web.Resources.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Web.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Web.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Web.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Web.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.Xpo.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.Xpo.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.Xpo.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.Xpo.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.XtraCharts.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.XtraCharts.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.XtraCharts.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.XtraCharts.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.XtraGauges.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.XtraGauges.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.XtraGauges.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.XtraGauges.v19.2.Core.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.XtraReports.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.XtraReports.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.XtraReports.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.XtraReports.v19.2.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\de\DevExpress.XtraReports.v19.2.Web.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\es\DevExpress.XtraReports.v19.2.Web.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ja\DevExpress.XtraReports.v19.2.Web.resources.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web\bin\ru\DevExpress.XtraReports.v19.2.Web.resources.dll

@@ -1,0 +1,29 @@
+﻿@model QuanLyNhanSu.Web.Models.UserAdminModel
+
+<div class="modal fade" id="divAddNguoiDung" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @using (Html.BeginForm("CreateNguoiDung", "NguoiDung"))
+            {
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Add new User</h4>
+                </div>
+                <div class="modal-body">
+                    @Html.DropDownListFor(model =>Model.MANV , QuanLyNhanSu.Web.WebCommons.DropdownCommons.DropDownAddNguoiDungNew, new { @class = "selectpicker" })
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add new</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<script src="/js/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#MANV').attr('data-live-search', 'true');
+        $('#MANV').attr('data-width', '100%');
+    });
+</script>

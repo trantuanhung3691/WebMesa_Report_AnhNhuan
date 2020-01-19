@@ -1,0 +1,71 @@
+﻿@model IEnumerable<QuanLyNhanSu.Web.Models.NhanVienModel>
+@using QuanLyNhanSu.Web.Models;
+@{
+    ViewBag.Title = "Employees";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="panel-heading header-title">
+    @ViewBag.Title
+    <div class="pull-right">
+        @using (Html.BeginForm())
+        {
+            <div class="input-group search-box">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Create", "NhanVien")'">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    </button>
+                </span>
+                <input type="text" class="form-control" name="@QuanLyNhanSu.Commons.ControlText.KeyWordID" id="@QuanLyNhanSu.Commons.ControlText.KeyWordID" placeholder="@QuanLyNhanSu.Commons.ControlText.PlaceHolderSearch">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button class="btn btn-default" type="button" title="Xuất Excel" onclick="ExportFile('mytable', 'DanhSachNhanVien');">
+                        <span class="glyphicon glyphicon-export"></span>
+                    </button>
+                </span>
+            </div>
+        }
+    </div>
+</div>
+<table class="table" id="mytable">
+    <tr>
+        <th>
+            @Html.MyDisplayNameFor(model => model.MANV)
+        </th>
+        <th>
+            @Html.MyDisplayNameFor(model => model.HOTEN)
+        </th>
+        <th>
+            @Html.MyDisplayNameFor(model => model.DIENTHOAI)
+        </th>
+        <th>
+            @Html.MyDisplayNameFor(model => model.EMAIL)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MANV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HOTEN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DIENTHOAI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMAIL)
+        </td>
+        <td>
+            @Html.ActionLink(" ", "Edit", new { id = item.MANV.Replace(".",QuanLyNhanSu.Commons.StringCommons.ParametterDot) }, new { @class = "glyphicon glyphicon-edit red" })
+            @Html.ActionLink(" ", "Delete", new { id = item.MANV.Replace(".", QuanLyNhanSu.Commons.StringCommons.ParametterDot) }, new {@class= "glyphicon glyphicon-remove red", onclick = "return AskBeforeDelete(this);" })
+        </td>
+    </tr>
+}
+
+</table>

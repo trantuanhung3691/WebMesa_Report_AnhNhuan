@@ -1,0 +1,143 @@
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\ApplicationInsights.config
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\csc.exe
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\System.Collections.Immutable.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\System.Reflection.Metadata.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\vbc.exe
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\VBCSCompiler.exe
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\VBCSCompiler.exe.config
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Web.Api.dll.config
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Web.Api.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Web.Api.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.DependencyCollector.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.Web.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.WindowsServer.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.ApplicationInsights.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Newtonsoft.Json.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Commons.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Dao.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Models.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\System.Net.Http.Formatting.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\System.Web.Http.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\System.Web.Http.WebHost.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Commons.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Dao.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Models.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.DependencyCollector.xml
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.Web.xml
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.WindowsServer.xml
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.ApplicationInsights.xml
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Newtonsoft.Json.xml
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\System.Net.Http.Formatting.xml
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\System.Web.Http.xml
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\System.Web.Http.WebHost.xml
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\obj\Debug\QuanLyNhanSu.Web.Api.csprojResolveAssemblyReference.cache
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\obj\Debug\QuanLyNhanSu.Web.Api.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\obj\Debug\QuanLyNhanSu.Web.Api.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\ApplicationInsights.config
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\csc.exe
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\System.Collections.Immutable.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\System.Reflection.Metadata.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\vbc.exe
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\VBCSCompiler.exe
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\VBCSCompiler.exe.config
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Web.Api.dll.config
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Web.Api.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Web.Api.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.DependencyCollector.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.Web.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.WindowsServer.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.ApplicationInsights.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Newtonsoft.Json.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Commons.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Dao.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Models.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\System.Net.Http.Formatting.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\System.Web.Http.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\System.Web.Http.WebHost.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Commons.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Dao.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Models.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.DependencyCollector.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.Web.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.WindowsServer.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.ApplicationInsights.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\Newtonsoft.Json.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\System.Net.Http.Formatting.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\System.Web.Http.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\bin\System.Web.Http.WebHost.xml
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\obj\Debug\QuanLyNhanSu.Web.Api.csprojResolveAssemblyReference.cache
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\obj\Debug\QuanLyNhanSu.Web.Api.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Web.Api\obj\Debug\QuanLyNhanSu.Web.Api.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\ApplicationInsights.config
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\csc.exe
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\System.Collections.Immutable.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\System.Reflection.Metadata.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\vbc.exe
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\VBCSCompiler.exe
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\roslyn\VBCSCompiler.exe.config
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Web.Api.dll.config
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Web.Api.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Web.Api.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.Agent.Intercept.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.DependencyCollector.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.Web.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.WindowsServer.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.ApplicationInsights.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Newtonsoft.Json.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Commons.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Dao.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Models.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\System.Net.Http.Formatting.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\System.Web.Http.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\System.Web.Http.WebHost.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Commons.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Dao.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Models.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\QuanLyNhanSu.Models.dll.config
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.DependencyCollector.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.Web.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.AI.WindowsServer.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.ApplicationInsights.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\Newtonsoft.Json.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\System.Net.Http.Formatting.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\System.Web.Http.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\bin\System.Web.Http.WebHost.xml
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\obj\Debug\QuanLyNhanSu.Web.Api.csprojAssemblyReference.cache
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\obj\Debug\QuanLyNhanSu.Web.Api.csproj.CopyComplete
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\obj\Debug\QuanLyNhanSu.Web.Api.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Web.Api\obj\Debug\QuanLyNhanSu.Web.Api.pdb

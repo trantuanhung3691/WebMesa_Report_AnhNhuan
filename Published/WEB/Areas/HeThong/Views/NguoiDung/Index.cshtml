@@ -1,0 +1,147 @@
+﻿@model IEnumerable<QuanLyNhanSu.Web.Models.UserAdminModel>
+
+@using QuanLyNhanSu.Web.Models;  
+
+@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="panel-heading header-title">
+    @ViewBag.Title
+    <div class="pull-right">
+        @using (Html.BeginForm())
+        {
+            <div class="input-group search-box">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#divAddNguoiDung">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    </button>
+                </span>
+                <input type="text" class="form-control" name="@QuanLyNhanSu.Commons.ControlText.KeyWordID" id="@QuanLyNhanSu.Commons.ControlText.KeyWordID" placeholder="@QuanLyNhanSu.Commons.ControlText.PlaceHolderSearch">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button class="btn btn-default" type="button" title="Xuất Excel" onclick="ExportFile('tbNguoiDung', 'DanhSachNguoiDung');">
+                        <span class="glyphicon glyphicon-export"></span>
+                    </button>
+                </span>
+                
+            </div>
+        }
+    </div>
+</div>
+<table class="table" id="tbNguoiDung">
+    <tr role="row">
+        <th>
+            Group
+        </th>
+        <th>
+            @Html.MyDisplayNameFor(model => model.Username)
+        </th>
+        <th>
+            @Html.MyDisplayNameFor(model => model.HOTEN)
+        </th>
+        <th>
+            @Html.MyDisplayNameFor(model => model.EMAIL)
+        </th>
+        <th>
+            @Html.MyDisplayNameFor(model => model.DIENTHOAI)
+        </th>
+        <th>
+            @Html.MyDisplayNameFor(model => model.Active)
+        </th>
+         @{
+             if (User.Identity!=null && User.Identity.Name.ToLower().Equals("admin"))
+             {
+                <th>
+                    Reset Mật khẩu
+                </th>
+             }
+        }
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr role="row">
+            <td>
+                <a title="Phân quyền người dùng" href="/HeThong/@ViewContext.RouteData.Values["controller"]/Permission/@item.Id"><i class="fa fa-users"></i></a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HOTEN)
+                
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.EMAIL)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.DIENTHOAI)
+            </td>
+
+            <td>
+                <div class="check_box">
+                    <input type="checkbox" name="checkbox1" id="@item.Id" class="ios8-switch" @Html.Raw(item.Active ? "checked" : "") />
+                    <label for="@item.Id" class="checkbox-label" data-off="off" data-on="on" onclick="ChangeActive(this,@item.Id);"></label>
+                </div>
+                
+            </td>
+           <td>
+               <span class="resetpass">
+                   @{
+                       if (User.Identity != null && User.Identity.Name.ToLower().Equals("admin"))
+                       {
+                           <button class="btn btn-default" onclick="ResetPassword(this,'@item.Username')">&nbsp; Reset</button>
+                           <script type="text/javascript">
+                               var ResetPassword = function (s, functionID) {
+                                   if (confirm("Are you sure to reset password of this account!")) {
+                                       $.ajax({
+                                           type: "POST",
+                                           url: '@Url.Action("ResetPassword", "NguoiDung")?usid=' + functionID,
+                                           contentType: "application/json; charset=utf-8",
+                                           dataType: "json",
+                                           success: function (data) {
+                                               alert(data._strDescription);
+                                           },
+                                           error: function () {
+                                               alert("Bạn không được quyền thực hiện thao tác này");
+                                           }
+                                       });
+                                   }
+                               };
+                           </script>
+                       }
+                   }
+               </span>
+
+           </td>
+        </tr>
+    }
+</table>
+@Html.Partial("usCreateNguoiDung",new QuanLyNhanSu.Web.Models.UserAdminModel())
+        <script src="/js/jquery-1.10.2.js"></script>
+        <script type="text/javascript">
+            var ChangeActive = function (s, functionID) {
+                var chk = $(s).closest('tr').find('input:checkbox');
+                var current = chk[0];
+                var checked = current.checked;
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("ChangeStatus", "NguoiDung")?accid=' + functionID + '&value=' + !checked,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+
+                    },
+                    error: function () {
+                        alert("Bạn không được quyền phân nhóm bạn không sở hữu");
+                    }
+                });
+            };
+            
+        </script>

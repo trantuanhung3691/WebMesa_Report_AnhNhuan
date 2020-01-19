@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ReportViewer.master.cs" Inherits="QuanLyNhanSu.Web.ReportViewers.ReportViewer" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="/js/jquery-1.10.2.js"></script>
+    <script src="../js/Dialogue.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../css/Customize.css" rel="stylesheet" />
+    <style type="text/css">
+        .buttonImage{
+            border:1px solid gray;
+            border-radius:2px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <div>
+            <asp:UpdatePanel runat="server" ID="upInfo" UpdateMode="Conditional">
+                <ContentTemplate>
+                    <div style="text-align:center;background-color:#777;padding:5px; display:none;">
+
+                    <asp:ImageButton ID="ImageButton1" CssClass="buttonImage" OnClientClick="$find('ctl00_myContent_rpViewer').exportReport('EXCELOPENXML');" runat="server" Height="28px" ImageUrl="~/Imgs/xls-icon.png" Width="32px" />
+                    <asp:ImageButton ID="ImageButton2" CssClass="buttonImage" OnClientClick="$find('ctl00_myContent_rpViewer').exportReport('WORDOPENXML');" runat="server" Height="28px" ImageUrl="~/Imgs/doc-icon.png" Width="32px" />
+                        
+                    </div>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+
+
+
+            <asp:ContentPlaceHolder ID="myContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <script type="text/javascript">
+                var showWaiting = function () {
+                    $("#divLoading2").modal('show');
+                    $("#divLoading2").delay(1000, null);
+                };
+                var closeWaiting = function () {
+                    $("#divLoading2").modal("hide");
+                };
+            </script>
+        </div>
+        <div class="modal windows8 " id="divLoading2" tabindex="-1" role="dialog">
+            <div class="wBall" id="wBall_1">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_2">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_3">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_4">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_5">
+                <div class="wInnerBall"></div>
+            </div>
+        </div>
+        <asp:UpdatePanel ID="upnlJsRunner" UpdateMode="Always" runat="server">
+            <ContentTemplate>
+                <asp:PlaceHolder ID="phrJsRunner" runat="server"></asp:PlaceHolder>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <asp:UpdatePanel runat="server" ID="upViewer" UpdateMode="Conditional">
+            <ContentTemplate>
+                <div class="pdfreport">
+                    <asp:Literal runat="server" ID="ltData"></asp:Literal>
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </form>
+</body>
+</html>

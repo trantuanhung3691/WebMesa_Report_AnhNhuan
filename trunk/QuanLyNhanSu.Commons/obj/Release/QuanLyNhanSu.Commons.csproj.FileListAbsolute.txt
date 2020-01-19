@@ -1,0 +1,15 @@
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\bin\Release\QuanLyNhanSu.Commons.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\bin\Release\QuanLyNhanSu.Commons.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\obj\Release\QuanLyNhanSu.Commons.csprojResolveAssemblyReference.cache
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\obj\Release\QuanLyNhanSu.Commons.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\obj\Release\QuanLyNhanSu.Commons.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\bin\Release\QuanLyNhanSu.Commons.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\bin\Release\QuanLyNhanSu.Commons.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\obj\Release\QuanLyNhanSu.Commons.csprojResolveAssemblyReference.cache
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\obj\Release\QuanLyNhanSu.Commons.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Commons\obj\Release\QuanLyNhanSu.Commons.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Commons\bin\Release\QuanLyNhanSu.Commons.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Commons\bin\Release\QuanLyNhanSu.Commons.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Commons\obj\Release\QuanLyNhanSu.Commons.csprojAssemblyReference.cache
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Commons\obj\Release\QuanLyNhanSu.Commons.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Commons\obj\Release\QuanLyNhanSu.Commons.pdb

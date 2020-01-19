@@ -1,0 +1,18 @@
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\bin\Release\QuanLyNhanSu.Models.dll.config
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\bin\Release\QuanLyNhanSu.Models.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\bin\Release\QuanLyNhanSu.Models.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\obj\Release\QuanLyNhanSu.Models.csprojResolveAssemblyReference.cache
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\obj\Release\QuanLyNhanSu.Models.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\obj\Release\QuanLyNhanSu.Models.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\bin\Release\QuanLyNhanSu.Models.dll.config
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\bin\Release\QuanLyNhanSu.Models.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\bin\Release\QuanLyNhanSu.Models.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\obj\Release\QuanLyNhanSu.Models.csprojResolveAssemblyReference.cache
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\obj\Release\QuanLyNhanSu.Models.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\obj\Release\QuanLyNhanSu.Models.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Models\bin\Release\QuanLyNhanSu.Models.dll.config
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Models\bin\Release\QuanLyNhanSu.Models.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Models\bin\Release\QuanLyNhanSu.Models.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Models\obj\Release\QuanLyNhanSu.Models.csprojAssemblyReference.cache
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Models\obj\Release\QuanLyNhanSu.Models.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Models\obj\Release\QuanLyNhanSu.Models.pdb

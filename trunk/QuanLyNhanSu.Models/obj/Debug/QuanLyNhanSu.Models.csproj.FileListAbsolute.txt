@@ -1,0 +1,30 @@
+D:\Company\hrmanager\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.dll.config
+D:\Company\hrmanager\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.dll
+D:\Company\hrmanager\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.pdb
+D:\Company\hrmanager\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.dll
+D:\Company\hrmanager\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.pdb
+D:\Company\hrmanager\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.csprojResolveAssemblyReference.cache
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.csprojResolveAssemblyReference.cache
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.dll
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.pdb
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.dll.config
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.dll
+D:\Data\Company\VietAn\Project 1\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.dll.config
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.pdb
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.csprojResolveAssemblyReference.cache
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.dll
+E:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.dll.config
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.dll
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.pdb
+D:\Data\Company\VietAn\Project 1\vietanReport\trunk\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.csprojResolveAssemblyReference.cache
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.dll.config
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Models\bin\Debug\QuanLyNhanSu.Models.pdb
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.csprojAssemblyReference.cache
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.dll
+E:\GitHub\WebMesa_Report_AnhNhuan\trunk\QuanLyNhanSu.Models\obj\Debug\QuanLyNhanSu.Models.pdb
