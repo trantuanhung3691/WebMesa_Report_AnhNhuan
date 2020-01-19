@@ -11,7 +11,7 @@ namespace QuanLyNhanSu.Web.Areas.Reports.Controllers
     [Authorize]
     public class ConsolidationController : Controller
     {
-        
+
         // GET: Reports/Consolidation
         public ActionResult Index()
         {
@@ -20,7 +20,7 @@ namespace QuanLyNhanSu.Web.Areas.Reports.Controllers
         [HttpPost]
         public ActionResult Index(Models.ItemReportModel model)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
                 return View();
             model.StoriesID = Request["StoriesID"].ToString();
             var result = new QuanLyNhanSu.Web.ServiceDao.ReportServiceDao().getListConsolidationReport(model.StoriesID, model.FromDate, model.ToDate);
@@ -28,6 +28,6 @@ namespace QuanLyNhanSu.Web.Areas.Reports.Controllers
             Session["Consolidation_Model"] = model;
             return View();
         }
-        
+
     }
 }

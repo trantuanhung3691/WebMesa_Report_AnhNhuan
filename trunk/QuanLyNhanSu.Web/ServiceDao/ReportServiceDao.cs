@@ -10,25 +10,25 @@ namespace QuanLyNhanSu.Web.ServiceDao
 {
     public class ReportServiceDao
     {
-        public List<TenderReport> getListTenderReport(string StoreID,DateTime fromdate,DateTime toDate)
+        public List<TenderReport> getListTenderReport(string StoreID, DateTime fromdate, DateTime toDate)
         {
             var url = string.Format("Report/getTender?storeid={0}&_fromdate={1}&_todate={2}", StoreID, fromdate.ToString("yyyy-MM-dd"), toDate.ToString("yyyy-MM-dd"));
             var data = new Services.WebApiCaller().GetUrl(url);
             var dataJson = JObject.Parse(data)["Table"];
-            
+
             var result = new List<TenderReport>();
-            foreach(JToken item in dataJson)
+            foreach (JToken item in dataJson)
             {
                 var dataItem = new TenderReport
                 {
-                    PosNo=(int)item["PosNo"],
-                    TransNo=(int)item["TransNo"],
-                    PosBizDate=(DateTime)item["PosBizDate"],
-                    AmountDue=(decimal)item["AmountDue"],
-                    TenderAmt=(decimal)item["TenderAmt"],
-                    TrxDateTime=(DateTime)item["TrxDateTime"],
-                    StoreNo=(string)item["StoreNo"],
-                    AuthId=(string)item["AuthId"]
+                    PosNo = (int)item["PosNo"],
+                    TransNo = (int)item["TransNo"],
+                    PosBizDate = (DateTime)item["PosBizDate"],
+                    AmountDue = (decimal)item["AmountDue"],
+                    TenderAmt = (decimal)item["TenderAmt"],
+                    TrxDateTime = (DateTime)item["TrxDateTime"],
+                    StoreNo = (string)item["StoreNo"],
+                    AuthId = (string)item["AuthId"]
                 };
                 result.Add(dataItem);
             }
@@ -78,7 +78,7 @@ namespace QuanLyNhanSu.Web.ServiceDao
                 };
                 sumTrx += dataItem.Trx;
                 sumQua += dataItem.Qua;
-                sumAmt += dataItem.SaleAmt ;
+                sumAmt += dataItem.SaleAmt;
                 count += 1;
                 result.Add(dataItem);
             }
@@ -110,7 +110,7 @@ namespace QuanLyNhanSu.Web.ServiceDao
                     HOUR = (int)item["HOUR"],
                     SaleAmt = (int)item["SaleAmt"],
                     Trx = (int)item["Trx"],
-                    Order=(int)item["Order"],
+                    Order = (int)item["Order"],
                     Pax = (int)item["Pax"]
                 };
                 result.Add(dataItem);
@@ -179,19 +179,19 @@ namespace QuanLyNhanSu.Web.ServiceDao
             {
                 var dataItem = new ItemSaleReport
                 {
-                    Cost=(int)item["Cost"],
-                    DiscountAmt=(int)item["DiscountAmt"],
-                    ItemCode=(string)item["ItemCode"],
-                    ItemDesc=(string)item["ItemDesc"],
-                    Name=(string)item["Name"],
-                    NetAmt=(int)item["NetAmt"],
-                    NetSellPrice=(int)item["NetSellPrice"],
-                    Quantity=(int)item["Quantity"],
-                    StoreNo=(string)item["StoreNo"],
-                    SubCatg=(string)item["SubCatg"],
-                    TaxAmt=(decimal)item["TaxAmt"],
-                    TotAmt=(int)item["TotAmt"],
-                    SubCatgDesc= (string)item["SubCatgDesc"],
+                    Cost = (int)item["Cost"],
+                    DiscountAmt = (int)item["DiscountAmt"],
+                    ItemCode = (string)item["ItemCode"],
+                    ItemDesc = (string)item["ItemDesc"],
+                    Name = (string)item["Name"],
+                    NetAmt = (int)item["NetAmt"],
+                    NetSellPrice = (int)item["NetSellPrice"],
+                    Quantity = (int)item["Quantity"],
+                    StoreNo = (string)item["StoreNo"],
+                    SubCatg = (string)item["SubCatg"],
+                    TaxAmt = (decimal)item["TaxAmt"],
+                    TotAmt = (int)item["TotAmt"],
+                    SubCatgDesc = (string)item["SubCatgDesc"],
                     CatgCode = (string)item["CatgCode"],
                     CatgDesc = (string)item["CatgDesc"]
                 };
@@ -199,9 +199,9 @@ namespace QuanLyNhanSu.Web.ServiceDao
             }
             return result;
         }
-        public List<ItemSaleByDesReport> getItemSaleByDesReport(string StoreID, DateTime fromdate, DateTime toDate,string Keyword, string Condition)
+        public List<ItemSaleByDesReport> getItemSaleByDesReport(string StoreID, DateTime fromdate, DateTime toDate, string Keyword, string Condition)
         {
-            var url = string.Format("Report/getItemSaleByDesReport?storeid={0}&_fromdate={1}&_todate={2}&_keyword={3}&_condition={4}", StoreID, fromdate.ToString("yyyy-MM-dd"), toDate.ToString("yyyy-MM-dd"),Keyword, Condition);
+            var url = string.Format("Report/getItemSaleByDesReport?storeid={0}&_fromdate={1}&_todate={2}&_keyword={3}&_condition={4}", StoreID, fromdate.ToString("yyyy-MM-dd"), toDate.ToString("yyyy-MM-dd"), Keyword, Condition);
             var data = new Services.WebApiCaller().GetUrl(url);
             var dataJson = JObject.Parse(data)["Table"];
             var result = new List<ItemSaleByDesReport>();
@@ -221,11 +221,11 @@ namespace QuanLyNhanSu.Web.ServiceDao
                     SubCatg = (string)item["SubCatg"],
                     TaxAmt = (decimal)item["TaxAmt"],
                     TotAmt = (int)item["TotAmt"],
-                    sumQuantity=(int)item["sumQuantity"],
-                    sumTotAmt=(decimal)item["sumTotAmt"],
-                    BillNo= (string)item["BillNo"],
-                    POSBizDate=(DateTime)item["POSBizDate"],
-                    SaleCode=(string)item["SaleCode"]
+                    sumQuantity = (int)item["sumQuantity"],
+                    sumTotAmt = (decimal)item["sumTotAmt"],
+                    BillNo = (string)item["BillNo"],
+                    POSBizDate = (DateTime)item["POSBizDate"],
+                    SaleCode = (string)item["SaleCode"]
                 };
                 result.Add(dataItem);
             }
@@ -241,30 +241,30 @@ namespace QuanLyNhanSu.Web.ServiceDao
             {
                 var dataItem = new ItemSaleByItemReport
                 {
-                    PosBizDate=(DateTime)item["PosBizDate"],
-                    BillNo=(string)item["BillNo"],
-                    CashierNo =(string)item["CashierNo"],
-                    ItemDesc=(string)item["ItemDesc"],
-                    PartySize=(int)item["PartySize"],
-                    PosNo=(int)item["PosNo"],
-                    SalesCode=(string)item["SalesCode"],
+                    PosBizDate = (DateTime)item["PosBizDate"],
+                    BillNo = (string)item["BillNo"],
+                    CashierNo = (string)item["CashierNo"],
+                    ItemDesc = (string)item["ItemDesc"],
+                    PartySize = (int)item["PartySize"],
+                    PosNo = (int)item["PosNo"],
+                    SalesCode = (string)item["SalesCode"],
                     SalesCodeMain = (string)item["SalesCodeMain"],
-                    ShiftNo =(int)item["ShiftNo"],
-                    StartPayTime=(DateTime)item["StartPayTime"],
-                    StoreNo=(string)item["StoreNo"],
-                    Tax=(decimal)item["Tax"],
-                    TotalAmount=(int)item["TotalAmount"],
-                    TotalBeforeTax=(int)item["TotalBeforeTax"],
-                    TotalCost=item["TotalCost"],
-                    TotalSaving=(int)item["TotalSaving"],
+                    ShiftNo = (int)item["ShiftNo"],
+                    StartPayTime = (DateTime)item["StartPayTime"],
+                    StoreNo = (string)item["StoreNo"],
+                    Tax = (decimal)item["Tax"],
+                    TotalAmount = (int)item["TotalAmount"],
+                    TotalBeforeTax = (int)item["TotalBeforeTax"],
+                    TotalCost = item["TotalCost"],
+                    TotalSaving = (int)item["TotalSaving"],
                     TransDisc = (int)item["TransDisc"],
-                    TransNo =(int)item["TransNo"],
-                    TrxVoidType=(int)item["TrxVoidType"],
-                    SeqNo=(string)item["SeqNo"],
-                    NetAmt=(decimal)item["NetAmt"],
-                    NetSellPrice=(decimal)item["NetSellPrice"],
-                    Quantity=(int)item["Quantity"],
-                    ItemCode=(string)item["ItemCode"]
+                    TransNo = (int)item["TransNo"],
+                    TrxVoidType = (int)item["TrxVoidType"],
+                    SeqNo = (string)item["SeqNo"],
+                    NetAmt = (decimal)item["NetAmt"],
+                    NetSellPrice = (decimal)item["NetSellPrice"],
+                    Quantity = (int)item["Quantity"],
+                    ItemCode = (string)item["ItemCode"]
                 };
                 result.Add(dataItem);
             }
@@ -289,10 +289,10 @@ namespace QuanLyNhanSu.Web.ServiceDao
                     TransDisc = (int)item["TransDisc"],
                     TotalAmount = (int)item["TotalAmount"],
                     TenderDesc = (string)item["TenderDesc"],
-                    TenderAmt=(int)item["TenderAmt"],
-                    ChangeAmt=(int)item["ChangeAmt"]
+                    TenderAmt = (int)item["TenderAmt"],
+                    ChangeAmt = (int)item["ChangeAmt"]
                 };
-                dataItem.SubTotal = Math.Round(dataItem.TotalBeforeTax,MidpointRounding.AwayFromZero);
+                dataItem.SubTotal = Math.Round(dataItem.TotalBeforeTax, MidpointRounding.AwayFromZero);
                 result.Add(dataItem);
             }
             return result;
